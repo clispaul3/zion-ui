@@ -3,4 +3,4 @@
 
 ## 快速启动
  - npm install && npm run build && npm run dev
- - 访问地址：http:{ip}:9000?pagename=ZionUIDocs
+ - 访问地址：http://{ip}:9000?pagename=ZionUIDocs
