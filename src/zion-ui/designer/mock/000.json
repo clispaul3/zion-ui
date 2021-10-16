@@ -1,0 +1,12 @@
+{
+	"pageId": "$$pageId",
+	"controlList": [],
+	"functionConfig": [],
+	"componentConfig": [],
+	"varConfig": [],
+	"layout": {
+		"type": "[[Row]]",
+		"props": {},
+		"children": []
+	}
+}

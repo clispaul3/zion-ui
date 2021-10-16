@@ -1,0 +1,149 @@
+{
+	"type": "[[Form]]",
+	"props": {
+		"controlKey": "{{controlKey}}",
+		"formConfig": {
+			"layout": "vertical",
+			"columns": 1,
+			"labelCol": {
+				"span": 24
+			}
+		},
+		"formItemConfig": [
+			{
+				"field": "controlKey",
+				"labelProps": {
+					"label": "控件编码"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"disabled": true
+					}
+				}
+			},
+			{
+				"field": "className",
+				"labelProps": {
+					"label": "类名",
+					"help": "输入类名，多个用空格隔开"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"allowSpace": true,
+						"type": "input",
+						"placeholder": "输入类名",
+						"onChange": "{{Service.className_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "style",
+				"labelProps": {
+					"label": "样式"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"onClick": "{{Service.style_onClick}}",
+						"disableOnChange": true,
+						"placeholder": "输入样式"
+					}
+				}
+			},
+			{
+				"field": "size",
+				"labelProps": {
+					"label": "尺寸"
+				},
+				"controlProps": {
+					"type": "[[Radio]]",
+					"props": {
+						"value": "middle",
+						"onChange": "{{Service.size_onChange}}",
+						"dataSource": [
+							{
+								"key": "small",
+								"label": "小"
+							},
+							{
+								"key": "middle",
+								"label": "中"
+							},
+							{
+								"key": "large",
+								"label": "大"
+							}
+						]
+					}
+				}
+			},
+			{
+				"field": "type",
+				"labelProps": {
+					"label": "类型"
+				},
+				"controlProps": {
+					"type": "[[Select]]",
+					"props": {
+						"value": "DATETIME",
+						"onChange": "{{Service.type_onChange}}",
+						"dataSource": [
+							{
+								"key": "DATETIME",
+								"label": "日期时间"
+							},
+							{
+								"key": "DATE",
+								"label": "日期"
+							},
+							{
+								"key": "TIME",
+								"label": "时间"
+							},
+							{
+								"key": "WEEK",
+								"label": "星期"
+							},
+							{
+								"key": "MONTH",
+								"label": "月份"
+							},
+							{
+								"key": "RANGEDATE",
+								"label": "日期范围"
+							},
+							{
+								"key": "RANGEDATETIME",
+								"label": "日期时间范围"
+							},
+							{
+								"key": "RANGEWEEK",
+								"label": "星期范围"
+							},
+							{
+								"key": "RANGEMONTH",
+								"label": "月份范围"
+							}
+						]
+					}
+				}
+			},
+			{
+				"field": "disabled",
+				"labelProps": {
+					"label": "是否禁用"
+				},
+				"controlProps": {
+					"type": "[[Switch]]",
+					"props": {
+						"checkedChildren": "是",
+						"unCheckedChildren": "否",
+						"onChange": "{{Service.disabled_onChange}}"
+					}
+				}
+			}
+		]
+	}
+}

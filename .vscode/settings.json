@@ -1,0 +1,42 @@
+{
+	"editor.fontSize": 14,
+	// tab 大小为2个空格
+	"editor.tabSize": 2,
+	// 100 列后换行
+	"editor.wordWrapColumn": 400,
+	// 保存时格式化
+	"editor.formatOnSave": true,
+	// 显示 markdown 中英文切换时产生的特殊字符
+	"editor.renderControlCharacters": false,
+	"editor.detectIndentation": false,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": false
+	},
+	"editor.formatOnPaste": true,
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/node_modules": false,
+		"**/.dockerignore": false,
+		"**/.editorconfig": false,
+		"src/resource/": false,
+		"src/style/": false,
+		"src/assets/": false,
+		"src/html/": false,
+		"src/dist/": false,
+		"src/readme/": false,
+		"src/zion-ui/": false,
+		"src/platform-v3/": false,
+		"src/platform-v2/": false,
+		"src/main.ts": false,
+		"src/webpack/config/": false,
+		"src/webpack/options/": false,
+		"src/webpack/postcss/": false,
+		"src/webpack/script/": false,
+		"src/projects/ZionUIDocs/": false,
+		"src/projects/PlatformV2Docs/": false
+	}
+}

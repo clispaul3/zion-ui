@@ -1,0 +1,44 @@
+{
+	"compilerOptions": {
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"target": "esnext",
+		"module": "esnext",
+		"moduleResolution": "node",
+		"importHelpers": true,
+		"jsx": "react",
+		"esModuleInterop": true,
+		"noImplicitAny": false,
+		"sourceMap": true,
+		"baseUrl": ".",
+		"strict": true,
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true,
+		"paths": {
+			"zion-ui": [
+				"src/zion-ui/index.ts"
+			],
+			"zion-mobile": [
+				"src/zion-mobile/index.ts"
+			],
+			"v2": [
+				"src/platform-v2/index.ts"
+			],
+			"v3": [
+				"src/platform-v3/index.ts"
+			]
+		}
+	},
+	"includes": [
+		"./typings.d.ts",
+		"src/"
+	],
+	"exclude": [
+		"node_modules",
+		"dist",
+		"webpack",
+		"src/assets/lib/HYPlayer.js",
+		"src/zion-ui/components/data-display/tree/z-tree/js/jquery.ztree.all.js"
+	]
+}

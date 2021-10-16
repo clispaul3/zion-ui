@@ -1,0 +1,344 @@
+{
+	"type": "[[Form]]",
+	"props": {
+		"controlKey": "{{controlKey}}",
+		"formConfig": {
+			"layout": "vertical",
+			"columns": 1,
+			"labelCol": {
+				"span": 24
+			}
+		},
+		"formItemConfig": [
+			{
+				"field": "label",
+				"show": false,
+				"labelProps": {
+					"label": "标签名"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"allowSpace": true,
+						"type": "input",
+						"placeholder": "输入标签名",
+						"value": "标签名",
+						"onChange": "{{Service.label_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "layout.labelCol.span",
+				"show": false,
+				"labelProps": {
+					"label": "栅格-标签占比"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"type": "number",
+						"style": {
+							"width": "100%"
+						},
+						"placeholder": "输入小于24的整数",
+						"onlyInt": true,
+						"onChange": "{{Service.labelCol_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "layout.wrapperCol.span",
+				"show": false,
+				"labelProps": {
+					"label": "栅格-文本框占比"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"type": "number",
+						"style": {
+							"width": "100%"
+						},
+						"placeholder": "输入小于24的整数",
+						"onlyInt": true,
+						"onChange": "{{Service.wrapperCol_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "className",
+				"labelProps": {
+					"label": "类名",
+					"help": "输入类名，多个用空格隔开"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"allowSpace": true,
+						"type": "input",
+						"placeholder": "输入类名",
+						"onChange": "{{Service.className_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "style",
+				"labelProps": {
+					"label": "样式"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"onClick": "{{Service.style_onClick}}",
+						"disableOnChange": true,
+						"placeholder": "输入样式"
+					}
+				}
+			},
+			{
+				"field": "size",
+				"labelProps": {
+					"label": "尺寸"
+				},
+				"controlProps": {
+					"type": "[[Radio]]",
+					"props": {
+						"value": "middle",
+						"onChange": "{{Service.size_onChange}}",
+						"dataSource": [
+							{
+								"key": "small",
+								"label": "小"
+							},
+							{
+								"key": "middle",
+								"label": "中"
+							},
+							{
+								"key": "large",
+								"label": "大"
+							}
+						]
+					}
+				}
+			},
+			{
+				"field": "type",
+				"labelProps": {
+					"label": "类型"
+				},
+				"controlProps": {
+					"type": "[[Select]]",
+					"props": {
+						"value": "input",
+						"onChange": "{{Service.type_onChange}}",
+						"dataSource": [
+							{
+								"key": "input",
+								"label": "input"
+							},
+							{
+								"key": "number",
+								"label": "number"
+							},
+							{
+								"key": "search",
+								"label": "search"
+							},
+							{
+								"key": "password",
+								"label": "password"
+							},
+							{
+								"key": "textArea",
+								"label": "textArea"
+							}
+						]
+					}
+				}
+			},
+			{
+				"field": "placeholder",
+				"labelProps": {
+					"label": "placeholder提示"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"value": null,
+						"placeholder": "输入提示文字",
+						"onChange": "{{Service.placeholder_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "validateResult.help",
+				"show": false,
+				"labelProps": {
+					"label": "提示文字"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"value": null,
+						"placeholder": "输入提示文字",
+						"onChange": "{{Service.help_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "addonBefore",
+				"labelProps": {
+					"label": "前置提示符"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"value": null,
+						"placeholder": "请输入",
+						"onChange": "{{Service.addonBefore_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "addonAfter",
+				"labelProps": {
+					"label": "后置提示符"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"value": null,
+						"placeholder": "请输入",
+						"onChange": "{{Service.addonAfter_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "allowClear",
+				"labelProps": {
+					"label": "是否允许清空"
+				},
+				"controlProps": {
+					"type": "[[Switch]]",
+					"props": {
+						"value": false,
+						"unCheckedChildren": "否",
+						"checkedChildren": "是",
+						"onChange": "{{Service.allowClear_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "required",
+				"show": false,
+				"labelProps": {
+					"label": "是否必填"
+				},
+				"controlProps": {
+					"type": "[[Switch]]",
+					"props": {
+						"value": false,
+						"unCheckedChildren": "否",
+						"checkedChildren": "是",
+						"onChange": "{{Service.require_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "allowSpace",
+				"labelProps": {
+					"label": "是否允许末尾空格"
+				},
+				"controlProps": {
+					"type": "[[Switch]]",
+					"props": {
+						"value": false,
+						"unCheckedChildren": "否",
+						"checkedChildren": "是",
+						"onChange": "{{Service.allowSpace_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "disableOnChange",
+				"labelProps": {
+					"label": "是否禁止输入"
+				},
+				"controlProps": {
+					"type": "[[Switch]]",
+					"props": {
+						"value": false,
+						"unCheckedChildren": "否",
+						"checkedChildren": "是",
+						"onChange": "{{Service.disableOnChange_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "visibilityToggle",
+				"labelProps": {
+					"label": "是否允许查看密码",
+					"help": "仅当文本框类型为password时有效"
+				},
+				"controlProps": {
+					"type": "[[Switch]]",
+					"props": {
+						"value": false,
+						"unCheckedChildren": "否",
+						"checkedChildren": "是",
+						"onChange": "{{Service.visibilityToggle_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "autoValidate",
+				"show": false,
+				"labelProps": {
+					"label": "是否自动校验",
+					"help": "当文本框必填时会自动校验"
+				},
+				"controlProps": {
+					"type": "[[Switch]]",
+					"props": {
+						"value": false,
+						"unCheckedChildren": "否",
+						"checkedChildren": "是",
+						"onChange": "{{Service.autoValidate_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "hasFeedback",
+				"show": false,
+				"labelProps": {
+					"label": "是否展示校验结果图标提示"
+				},
+				"controlProps": {
+					"type": "[[Switch]]",
+					"props": {
+						"value": false,
+						"unCheckedChildren": "否",
+						"checkedChildren": "是",
+						"onChange": "{{Service.hasFeedback_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "disabled",
+				"labelProps": {
+					"label": "是否禁用"
+				},
+				"controlProps": {
+					"type": "[[Switch]]",
+					"props": {
+						"value": false,
+						"unCheckedChildren": "否",
+						"checkedChildren": "是",
+						"onChange": "{{Service.disabled_onChange}}"
+					}
+				}
+			}
+		]
+	}
+}

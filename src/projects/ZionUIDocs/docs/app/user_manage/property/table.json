@@ -1,0 +1,130 @@
+{
+  "type": "[[Row]]",
+  "props": {
+    "style": {
+      "height": "{{getHeight}}"
+    }
+  },
+  "children": [
+    {
+      "type": "[[Col]]",
+      "props": {
+        "style": {
+          "background": "#fff",
+          "padding": "10px 20px"
+        },
+        "span": 24
+      },
+      "children": [
+        {
+          "type": "[[Table]]",
+          "props": {
+            "controlKey": "{{controlKey.TABLE}}",
+            "rowKey": "userId",
+            "border": false,
+            "header": {
+              "show": true,
+              "searchInput": {
+                "span": 10,
+                "placeholder": "输入用户名"
+              },
+              "headerButton": {
+                "show": true,
+                "span": 10,
+                "button": [
+                  {
+                    "text": "新增",
+                    "btnCode": "CREATE_BUTTON",
+                    "onClick": "{{tableService.createButton}}"
+                  },
+                  {
+                    "text": "导入",
+                    "btnCode": "IMPORT_BUTTON",
+                    "onClick": "{{tableService.importButton}}"
+                  },
+                  {
+                    "text": "导出",
+                    "btnCode": "EXPORT_BUTTON",
+                    "onClick": "{{tableService.exportButton}}"
+                  },
+                  {
+                    "text": "批量删除",
+                    "btnCode": "HEADER_DELETE_BUTTON"
+                  }
+                ]
+              },
+              "refreshButton": {
+                "span": 1
+              },
+              "customerColumns": {
+                "span": 1
+              },
+              "filterSetting": {
+                "span": 1
+              },
+              "fullscreenButton": {
+                "span": 1
+              }
+            },
+            "columns": [
+              {
+                "title": "姓名",
+                "dataIndex": "username",
+                "align": "center"
+              },
+              {
+                "title": "性别",
+                "dataIndex": "sex",
+                "align": "center",
+                "render": "{{tableService.render_sex}}"
+              },
+              {
+                "title": "爱好",
+                "dataIndex": "hobby",
+                "align": "center",
+                "render": "{{tableService.render_hobby}}"
+              },
+              {
+                "title": "年龄",
+                "dataIndex": "age",
+                "align": "center"
+              }
+            ],
+            "buttonConfig": {
+              "rowButton": [
+                {
+                  "text": "编辑",
+                  "btnCode": "CREATE_BUTTON",
+                  "onClick": "{{tableService.updateButton}}"
+                },
+                {
+                  "text": "删除",
+                  "btnCode": "ROW_DELETE_BUTTON"
+                }
+              ]
+            },
+            "rowSelection": {
+              "show": true,
+              "mode": "checkbox"
+            },
+            "footer": {
+              "show": true,
+              "key": "userId",
+              "label": "username",
+              "allowShowList": true
+            },
+            "pagination": {
+              "show": true,
+              "simple": true
+            },
+            "httpConfig": {
+              "init": "{{tableService.httpConfig.init}}",
+              "delete": "{{tableService.httpConfig.delete}}",
+              "onSearch": "{{tableService.httpConfig.onSearch}}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

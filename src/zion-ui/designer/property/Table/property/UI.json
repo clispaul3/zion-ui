@@ -1,0 +1,184 @@
+{
+	"type": "[[Form]]",
+	"props": {
+		"controlKey": "{{controlKey}}",
+		"formConfig": {
+			"layout": "vertical",
+			"columns": 1,
+			"labelCol": {
+				"span": 24
+			}
+		},
+		"formItemConfig": [
+			{
+				"field": "controlKey",
+				"labelProps": {
+					"label": "控件编码"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"disabled": true
+					}
+				}
+			},
+			{
+				"field": "bordered",
+				"labelProps": {
+					"label": "是否展示边框"
+				},
+				"controlProps": {
+					"type": "[[Switch]]",
+					"props": {
+						"value": false,
+						"unCheckedChildren": "否",
+						"checkedChildren": "是",
+						"onChange": "{{Service.bordered_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "pagination.show",
+				"labelProps": {
+					"label": "是否分页"
+				},
+				"controlProps": {
+					"type": "[[Switch]]",
+					"props": {
+						"value": false,
+						"unCheckedChildren": "否",
+						"checkedChildren": "是",
+						"onChange": "{{Service.isShowPagination}}"
+					}
+				}
+			},
+			{
+				"field": "pagination.size",
+				"labelProps": {
+					"label": "每页展示数量"
+				},
+				"controlProps": {
+					"type": "[[Select]]",
+					"props": {
+						"value": "10",
+						"dataSource": [
+							{
+								"key": "10",
+								"label": "10条"
+							},
+							{
+								"key": "20",
+								"label": "20条"
+							},
+							{
+								"key": "50",
+								"label": "50条"
+							},
+							{
+								"key": "100",
+								"label": "100条"
+							},
+							{
+								"key": "200",
+								"label": "200条"
+							}
+						],
+						"onChange": "{{Service.paginationSize_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "rowSelection.mode",
+				"labelProps": {
+					"label": "行选择"
+				},
+				"controlProps": {
+					"type": "[[Radio]]",
+					"props": {
+						"value": "10",
+						"dataSource": [
+							{
+								"key": "radio",
+								"label": "单选"
+							},
+							{
+								"key": "checkbox",
+								"label": "多选"
+							},
+							{
+								"key": "none",
+								"label": "不可选"
+							}
+						],
+						"onChange": "{{Service.rowSelection_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "buttonConfig",
+				"labelProps": {
+					"label": "行按钮"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"disableOnChange": true,
+						"onClick": "{{Service.buttonConfig_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "columns",
+				"labelProps": {
+					"label": "列配置"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"disableOnChange": true,
+						"onClick": "{{Service.columns_onClick}}"
+					}
+				}
+			},
+			{
+				"field": "header",
+				"labelProps": {
+					"label": "表头配置"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"disableOnChange": true,
+						"onClick": "{{Service.header_onClick}}"
+					}
+				}
+			},
+			{
+				"field": "footer",
+				"labelProps": {
+					"label": "底部栏"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"disableOnChange": true,
+						"onClick": "{{Service.footer_onClick}}"
+					}
+				}
+			},
+			{
+				"field": "scroll",
+				"labelProps": {
+					"label": "滚动条配置"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"disableOnChange": true,
+						"onClick": "{{Service.scroll_onClick}}"
+					}
+				}
+			}
+		]
+	}
+}

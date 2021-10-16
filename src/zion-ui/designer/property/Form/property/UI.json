@@ -1,0 +1,151 @@
+{
+	"type": "[[Form]]",
+	"props": {
+		"controlKey": "{{controlKey}}",
+		"formConfig": {
+			"layout": "vertical",
+			"columns": 1,
+			"labelCol": {
+				"span": 24
+			}
+		},
+		"formItemConfig": [
+			{
+				"field": "controlKey",
+				"labelProps": {
+					"label": "控件编码"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"disabled": true
+					}
+				}
+			},
+			{
+				"field": "formConfig.columns",
+				"labelProps": {
+					"label": "列展示"
+				},
+				"controlProps": {
+					"type": "[[Select]]",
+					"props": {
+						"value": "1",
+						"dataSource": [
+							{
+								"key": "1",
+								"label": "单列"
+							},
+							{
+								"key": "2",
+								"label": "双列"
+							},
+							{
+								"key": "3",
+								"label": "三列"
+							}
+						],
+						"onChange": "{{Service.columns_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "formConfig.layout",
+				"labelProps": {
+					"label": "标签文本布局"
+				},
+				"controlProps": {
+					"type": "[[Select]]",
+					"props": {
+						"value": "vertical",
+						"dataSource": [
+							{
+								"key": "vertical",
+								"label": "垂直"
+							},
+							{
+								"key": "horizontal",
+								"label": "水平"
+							}
+						],
+						"onChange": "{{Service.layout_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "formConfig.labelCol.span",
+				"labelProps": {
+					"label": "标签文本栅格占比",
+					"help": "最大24，最小0"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"type": "number",
+						"value": 24,
+						"onChange": "{{Service.labelCol_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "formConfig.wrapperCol.span",
+				"labelProps": {
+					"label": "控件栅格占比",
+					"help": "最大24，最小0"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"type": "number",
+						"value": 24,
+						"onChange": "{{Service.wrapperCol_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "style",
+				"labelProps": {
+					"label": "样式"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"onClick": "{{Service.style_onClick}}",
+						"disableOnChange": true,
+						"placeholder": "输入样式"
+					}
+				}
+			},
+			{
+				"field": "className",
+				"labelProps": {
+					"label": "类名",
+					"help": "输入类名，多个用空格隔开"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"allowSpace": true,
+						"type": "input",
+						"placeholder": "输入类名",
+						"onChange": "{{Service.className_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "formItemConfig",
+				"labelProps": {
+					"label": "表单元素"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"onClick": "{{Service.formItemConfig_onClick}}",
+						"disableOnChange": true,
+						"placeholder": "设置表单元素"
+					}
+				}
+			}
+		]
+	}
+}

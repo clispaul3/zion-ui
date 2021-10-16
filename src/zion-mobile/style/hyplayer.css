@@ -1,0 +1,318 @@
+/*! 版权所有，翻版必究 */
+.hyplayer-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.hyplayer-container * {
+  box-sizing: border-box;
+}
+.hyplayer-container .hyplayer-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.hyplayer-container .hyplayer-icon svg {
+  fill: #fff;
+}
+.hyplayer-container .hyplayer-controls svg {
+  fill: #fff;
+  cursor: pointer;
+}
+.hyplayer-container .hyplayer_screenshot {
+  display: flex;
+  margin-left: auto;
+}
+.hyplayer-container .hyplayer-player {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.hyplayer-container .hyplayer-player .hyplayer-canvas {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+.hyplayer-container .hyplayer-player .hyplayer-poster {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+.hyplayer-container .hyplayer-player .hyplayer-loading {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.hyplayer-container .hyplayer-player .hyplayer-error {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  z-index: 30;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  pointer-events: none;
+}
+.hyplayer-container .hyplayer-player .hyplayer-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  z-index: 40;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  padding: 50px 10px 10px;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAADGCAYAAAAT+OqFAAAAdklEQVQoz42QQQ7AIAgEF/T/D+kbq/RWAlnQyyazA4aoAB4FsBSA/bFjuF1EOL7VbrIrBuusmrt4ZZORfb6ehbWdnRHEIiITaEUKa5EJqUakRSaEYBJSCY2dEstQY7AuxahwXFrvZmWl2rh4JZ07z9dLtesfNj5q0FU3A5ObbwAAAABJRU5ErkJggg==)
+    repeat-x bottom;
+}
+.hyplayer-container .hyplayer-player .hyplayer-controls .hyplayer-controls-item {
+  display: flex;
+  justify-content: center;
+  padding: 0 7px;
+}
+.hyplayer-container .hyplayer-player .hyplayer-controls .hyplayer-controls-progress {
+  position: relative;
+  height: 3px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.25);
+}
+.hyplayer-container .hyplayer-player .hyplayer-controls .hyplayer-controls-progress .hyplayer-loaded {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.hyplayer-container .hyplayer-player .hyplayer-controls .hyplayer-controls-progress .hyplayer-played {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 3px;
+  background: white;
+}
+.hyplayer-container
+  .hyplayer-player
+  .hyplayer-controls
+  .hyplayer-controls-progress
+  .hyplayer-played
+  .hyplayer-indicator {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  margin: -6px -6px 0 0;
+  border-radius: 50%;
+  background: white;
+}
+.hyplayer-container .hyplayer-player .hyplayer-controls .hyplayer-controls-bottom {
+  display: flex;
+  justify-content: space-between;
+  height: 22px;
+  margin-top: 15px;
+}
+.hyplayer-container .hyplayer-player .hyplayer-controls .hyplayer-controls-bottom .hyplayer-controls-left {
+  display: flex;
+  align-items: center;
+}
+.hyplayer-container
+  .hyplayer-player
+  .hyplayer-controls
+  .hyplayer-controls-bottom
+  .hyplayer-controls-left
+  .hyplayer-state {
+  height: 100%;
+}
+.hyplayer-container
+  .hyplayer-player
+  .hyplayer-controls
+  .hyplayer-controls-bottom
+  .hyplayer-controls-left
+  .hyplayer-state
+  .hyplayer-pause {
+  display: none;
+}
+.hyplayer-container
+  .hyplayer-player
+  .hyplayer-controls
+  .hyplayer-controls-bottom
+  .hyplayer-controls-left
+  .hyplayer-volume {
+  display: flex;
+  height: 100%;
+}
+.hyplayer-container
+  .hyplayer-player
+  .hyplayer-controls
+  .hyplayer-controls-bottom
+  .hyplayer-controls-left
+  .hyplayer-volume
+  .hyplayer-volume-off {
+  display: none;
+}
+.hyplayer-container
+  .hyplayer-player
+  .hyplayer-controls
+  .hyplayer-controls-bottom
+  .hyplayer-controls-left
+  .hyplayer-volume
+  .hyplayer-volume-panel {
+  position: relative;
+  width: 0;
+  height: 100%;
+  transition: margin 0.2s cubic-bezier(0.4, 0, 1, 1), width 0.2s cubic-bezier(0.4, 0, 1, 1);
+  overflow: hidden;
+}
+.hyplayer-container
+  .hyplayer-player
+  .hyplayer-controls
+  .hyplayer-controls-bottom
+  .hyplayer-controls-left
+  .hyplayer-volume
+  .hyplayer-volume-panel
+  .hyplayer-volume-panel-handle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  margin-top: -6px;
+  background: #fff;
+}
+.hyplayer-container
+  .hyplayer-player
+  .hyplayer-controls
+  .hyplayer-controls-bottom
+  .hyplayer-controls-left
+  .hyplayer-volume
+  .hyplayer-volume-panel
+  .hyplayer-volume-panel-handle::before {
+  left: -54px;
+  background: #fff;
+}
+.hyplayer-container
+  .hyplayer-player
+  .hyplayer-controls
+  .hyplayer-controls-bottom
+  .hyplayer-controls-left
+  .hyplayer-volume
+  .hyplayer-volume-panel
+  .hyplayer-volume-panel-handle::after {
+  left: 6px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.hyplayer-container
+  .hyplayer-player
+  .hyplayer-controls
+  .hyplayer-controls-bottom
+  .hyplayer-controls-left
+  .hyplayer-volume
+  .hyplayer-volume-panel
+  .hyplayer-volume-panel-handle::before,
+.hyplayer-container
+  .hyplayer-player
+  .hyplayer-controls
+  .hyplayer-controls-bottom
+  .hyplayer-controls-left
+  .hyplayer-volume
+  .hyplayer-volume-panel
+  .hyplayer-volume-panel-handle::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  height: 3px;
+  margin-top: -2px;
+  width: 60px;
+}
+.hyplayer-container
+  .hyplayer-player
+  .hyplayer-controls
+  .hyplayer-controls-bottom
+  .hyplayer-controls-left
+  .hyplayer-volume:hover
+  .hyplayer-volume-panel {
+  width: 60px;
+  margin-left: 5px;
+}
+.hyplayer-container .hyplayer-player .hyplayer-controls .hyplayer-controls-bottom .hyplayer-controls-right {
+  display: flex;
+  align-items: center;
+}
+.hyplayer-container .hyplayer-player.hyplayer-loading-show .hyplayer-loading {
+  display: flex;
+}
+.hyplayer-container .hyplayer-player.hyplayer-error-show .hyplayer-error {
+  display: flex;
+}
+.hyplayer-container .hyplayer-player.hyplayer-controls-show .hyplayer-controls {
+  opacity: 1;
+  visibility: visible;
+}
+.hyplayer-container .hyplayer-player.hyplayer-controls-hide .hyplayer-controls {
+  opacity: 0;
+  visibility: hidden;
+}
+.hyplayer-container .hyplayer-player.hyplayer-hide-cursor * {
+  cursor: none !important;
+}
+.hyplayer-container.hyplayer-fullscreen-web {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100% !important;
+  height: 100% !important;
+  background: #000;
+}

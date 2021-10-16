@@ -1,0 +1,7 @@
+/node_modules/
+/yarn.lock
+/yarn-error.log
+/dist/
+.history/
+*/package-lock.json
+/.idea/

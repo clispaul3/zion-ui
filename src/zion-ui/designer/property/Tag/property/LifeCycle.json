@@ -1,0 +1,43 @@
+{
+  "type": "[[Form]]",
+  "props": {
+    "controlKey": "{{controlKey}}",
+    "formConfig": {
+      "layout": "vertical",
+      "columns": 1,
+      "labelCol": {
+        "span": 24
+      }
+    },
+    "formItemConfig": [
+      {
+        "field": "didMount",
+        "labelProps": {
+          "label": "渲染完成",
+          "help": "渲染完成后执行"
+        },
+        "controlProps": {
+          "type": "[[Input]]",
+          "props": {
+            "allowSpace": true,
+            "type": "input",
+            "placeholder": "请选择"
+          }
+        }
+      },
+      {
+        "field": "observer",
+        "labelProps": {
+          "label": "组件渲染",
+          "help": "每次渲染前会执行"
+        },
+        "controlProps": {
+          "type": "[[Input]]",
+          "props": {
+            "placeholder": "请选择"
+          }
+        }
+      }
+    ]
+  }
+}

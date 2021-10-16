@@ -1,0 +1,35 @@
+{
+  "type": "[[Table]]",
+  "props": {
+    "controlKey": "{{ServiceEvent.controlKey.Table}}",
+    "rowKey": "parameter",
+    "columns": [
+      {
+        "title": "方法",
+        "dataIndex": "func"
+      },
+      {
+        "title": "参数",
+        "dataIndex": "parameter"
+      },
+      {
+        "title": "说明",
+        "dataIndex": "instructions",
+        "render": "{{ServiceEvent.renderInstructions}}"
+      },
+      {
+        "title": "类型",
+        "dataIndex": "type",
+        "render": "{{ServiceEvent.renderType}}"
+      },
+      {
+        "title": "是否必填",
+        "dataIndex": "isNeed"
+      }
+    ],
+    "bordered": false,
+    "httpConfig": {
+      "init": "{{ServiceEvent.table_httpConfig.init}}"
+    }
+  }
+}

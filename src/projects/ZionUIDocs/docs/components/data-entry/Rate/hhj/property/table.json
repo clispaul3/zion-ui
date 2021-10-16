@@ -1,0 +1,35 @@
+{
+  "type": "[[Table]]",
+  "props": {
+    "controlKey": "{{Service.controlKey.Table}}",
+    "rowKey": "parameter",
+    "columns": [
+      {
+        "title": "参数",
+        "dataIndex": "parameter"
+      },
+      {
+        "title": "说明",
+        "dataIndex": "instructions",
+        "render": "{{Service.renderInstructions}}"
+      },
+      {
+        "title": "类型",
+        "dataIndex": "type",
+        "render": "{{Service.renderType}}"
+      },
+      {
+        "title": "默认值",
+        "dataIndex": "default"
+      },
+      {
+        "title": "是否必填",
+        "dataIndex": "isNeed"
+      }
+    ],
+    "bordered": false,
+    "httpConfig": {
+      "init": "{{Service.table_httpConfig.init}}"
+    }
+  }
+}

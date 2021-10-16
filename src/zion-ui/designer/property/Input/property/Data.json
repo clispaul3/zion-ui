@@ -1,0 +1,111 @@
+{
+  "type": "[[Form]]",
+  "props": {
+    "controlKey": "{{controlKey}}",
+    "formConfig": {
+      "layout": "vertical",
+      "columns": 1,
+      "labelCol": {
+        "span": 24
+      }
+    },
+    "formItemConfig": [
+      {
+        "field": "value",
+        "labelProps": {
+          "label": "实际值"
+        },
+        "controlProps": {
+          "type": "[[Input]]",
+          "props": {
+            "style": {
+              "width": "100%"
+            },
+            "onChange": "{{Service.value_onChange}}"
+          }
+        }
+      },
+      {
+        "field": "showValue",
+        "labelProps": {
+          "label": "显示值"
+        },
+        "controlProps": {
+          "type": "[[Input]]",
+          "props": {
+            "style": {
+              "width": "100%"
+            },
+            "onChange": "{{Service.showValue_onChange}}"
+          }
+        }
+      },
+      {
+        "field": "max",
+        "labelProps": {
+          "label": "最大值",
+          "help": "仅当文本框类型为number时有效"
+        },
+        "controlProps": {
+          "type": "[[Input]]",
+          "props": {
+            "style": {
+              "width": "100%"
+            },
+            "onChange": "{{Service.max_onChange}}",
+            "type": "number"
+          }
+        }
+      },
+      {
+        "field": "min",
+        "labelProps": {
+          "label": "最小值",
+          "help": "仅当文本框类型为number时有效"
+        },
+        "controlProps": {
+          "type": "[[Input]]",
+          "props": {
+            "style": {
+              "width": "100%"
+            },
+            "onChange": "{{Service.min_onChange}}",
+            "type": "number"
+          }
+        }
+      },
+      {
+        "field": "onlyInt",
+        "labelProps": {
+          "label": "是否只能输入整数",
+          "help": "仅当文本框类型为number时有效"
+        },
+        "controlProps": {
+          "type": "[[Switch]]",
+          "props": {
+            "value": false,
+            "unCheckedChildren": "否",
+            "checkedChildren": "是",
+            "onChange": "{{Service.onlyInt_onChange}}"
+          }
+        }
+      },
+      {
+        "field": "maxLength",
+        "labelProps": {
+          "label": "最大字符长度"
+        },
+        "controlProps": {
+          "type": "[[Input]]",
+          "props": {
+            "style": {
+              "width": "100%"
+            },
+            "onChange": "{{Service.maxLength_onChange}}",
+            "type": "number"
+          }
+        }
+      }
+    ]
+  }
+}

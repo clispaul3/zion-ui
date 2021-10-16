@@ -1,0 +1,29 @@
+{
+  "type": "[[Form]]",
+  "props": {
+    "controlKey": "{{controlKey}}",
+    "formConfig": {
+      "layout": "vertical",
+      "columns": 1,
+      "labelCol": {
+        "span": 24
+      }
+    },
+    "formItemConfig": [
+      {
+        "field": "onChange",
+        "labelProps": {
+          "label": "值改变事件"
+        },
+        "controlProps": {
+          "type": "[[Input]]",
+          "props": {
+            "onClick": "{{Service.onChange_onClick}}",
+            "type": "input",
+            "placeholder": "请选择"
+          }
+        }
+      }
+    ]
+  }
+}

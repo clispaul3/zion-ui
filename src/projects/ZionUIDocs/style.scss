@@ -1,0 +1,25 @@
+.zion-ui-docs-header {
+	height: 64px;
+	white-space: nowrap;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 8px 24px -2px;
+	padding: 0px 58px;
+	background: rgb(255, 255, 255);
+	.ant-form-item {
+		margin: 0px 0px !important;
+	}
+}
+
+.zion-ui-docs-demo-container {
+	padding: 10px;
+	background-color: #fff;
+	margin-bottom: 15px;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	box-shadow: 0 3px 0px -4px rgba(61, 53, 53, 0.12), 0 6px 6px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+.CodeMirror {
+	height: 100% !important;
+	[class^="cm"] {
+		font-size: 13px;
+	}
+}

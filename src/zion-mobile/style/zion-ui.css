@@ -1,0 +1,150 @@
+@import "./zion-ui.designer.scss";
+@import "../../../node_modules/codemirror/lib/codemirror.css";
+@import "../../../node_modules/codemirror/theme/material-darker.css";
+@import "./hyplayer.css";
+@import "../../../node_modules/viewerjs/dist/viewer.css";
+
+.ant-form-item-has-feedback .ant-select .ant-select-arrow,
+.ant-form-item-has-feedback .ant-select .ant-select-clear {
+	right: 11px !important;
+}
+form.zion-ui-form.ant-form-vertical .ant-form-item {
+	min-height: 70px !important;
+}
+form.zion-ui-form .ant-form-item {
+	margin-bottom: 10px;
+}
+form.zion-ui-form .ant-form-item-label {
+	padding-bottom: 5px;
+}
+form.zion-ui-form.ant-form-vertical .ant-form-item-label::after {
+	content: " :";
+}
+
+.zion-ui-query-form .ant-form-item-control-input {
+	top: 8px;
+}
+
+/* .ant-table-selection-column .ant-checkbox-wrapper .ant-checkbox {
+	top: -3px;
+} */
+
+.ant-table-cell .ant-form-item {
+	margin-bottom: 0px !important;
+}
+
+.ant-cascader-picker-clear,
+.ant-select-picker-clear {
+	right: 11px !important;
+}
+.ant-cascader-picker-arrow,
+.ant-select-picker-arrow {
+	margin-right: 0px !important;
+}
+
+.zion-ui-popmodal .ant-modal-header,
+.zion-ui-popdrawer .ant-drawer-header,
+.zion-ui-popmodal .ant-modal-footer,
+.zion-ui-popdrawer .ant-drawer-footer {
+	padding: 16px 24px !important;
+}
+.zion-ui-popmodal .ant-modal-body,
+.zion-ui-popdrawer .ant-drawer-body {
+	padding: 24px 24px !important;
+}
+.zion-ui-popmodal .ant-modal,
+.zion-ui-popdrawer .ant-drawer {
+	max-width: 100% !important;
+	padding: 0px 0px !important;
+}
+
+.zion-ui-popmodal-resize {
+	display: inline-block;
+	border-bottom: 3px solid #ff9812;
+	border-right: 3px solid #ff9812;
+	width: 20px;
+	height: 20px;
+	cursor: se-resize;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	opacity: 0.3;
+}
+
+.zion-ui-table-drag-body-container {
+	background: #fafafa;
+	border: 1px solid #ccc;
+}
+
+.zion-ui-table-drag-body-container td {
+	padding: 8px;
+	visibility: hidden;
+}
+
+.zion-ui-table-drag-body-container .drag-visible {
+	visibility: visible;
+}
+
+.zion-ui-form input[disabled] {
+	color: rgba(0, 0, 0, 0.8);
+}
+form.zion-ui-detail-form label {
+	font-weight: 600;
+	color: #000;
+}
+
+form.zion-ui-detail-form .ant-form-item {
+	margin-bottom: 10px;
+}
+
+.zion-ui-query-form .ant-form-item .ant-form-item-label {
+	top: 8px;
+}
+
+/* 表头标题加粗 */
+th.ant-table-align-center,
+th.ant-table-row-cell-break-word {
+	font-weight: bold !important;
+}
+
+.ant-table-thead
+	> tr
+	> th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan]):before {
+	width: 0px !important;
+}
+/* .ant-table-cell {
+	background-color: #fff !important;
+} */
+
+
+.ant-picker-content thead tr th,
+th.ant-table-cell {
+	background-color: #eee;
+	font-weight: bold !important;
+	padding: 5px !important;
+}
+
+form.zion-ui-form .ant-form-item-children-icon {
+	top: 50% !important;
+}
+
+.zion-ui-draglayout-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.zion-ui-draglayout {
+	-webkit-transition: all 0.15s;
+	transition: all 0.15s;
+}
+
+.zion-ui-no-border {
+	border: 0 none !important;
+}
+.zion-ui-no-border .ant-select-selector {
+	border: 0 none !important;
+}
+
+
+

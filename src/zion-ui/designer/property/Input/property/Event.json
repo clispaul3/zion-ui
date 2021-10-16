@@ -1,0 +1,73 @@
+{
+  "type": "[[Form]]",
+  "props": {
+    "controlKey": "{{controlKey}}",
+    "formConfig": {
+      "layout": "vertical",
+      "columns": 1,
+      "labelCol": {
+        "span": 24
+      }
+    },
+    "formItemConfig": [
+      {
+        "field": "onClick",
+        "labelProps": {
+          "label": "点击事件",
+          "help": "点击按钮会触发该事件"
+        },
+        "controlProps": {
+          "type": "[[Input]]",
+          "props": {
+            "onClick": "{{Service.onClick_onClick}}",
+            "allowSpace": true,
+            "type": "input",
+            "placeholder": "请选择"
+          }
+        }
+      },
+      {
+        "field": "onChange",
+        "labelProps": {
+          "label": "值改变事件"
+        },
+        "controlProps": {
+          "type": "[[Input]]",
+          "props": {
+            "onClick": "{{Service.onChange_onClick}}",
+            "type": "input",
+            "placeholder": "请选择"
+          }
+        }
+      },
+      {
+        "field": "onFocus",
+        "labelProps": {
+          "label": "聚焦事件"
+        },
+        "controlProps": {
+          "type": "[[Input]]",
+          "props": {
+            "onClick": "{{Service.onFocus_onClick}}",
+            "type": "input",
+            "placeholder": "请选择"
+          }
+        }
+      },
+      {
+        "field": "onBlur",
+        "labelProps": {
+          "label": "失焦事件"
+        },
+        "controlProps": {
+          "type": "[[Input]]",
+          "props": {
+            "onClick": "{{Service.onBlur_onClick}}",
+            "type": "input",
+            "placeholder": "请选择"
+          }
+        }
+      }
+    ]
+  }
+}

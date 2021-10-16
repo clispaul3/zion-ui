@@ -1,0 +1,44 @@
+{
+  "type": "[[Form]]",
+  "props": {
+    "controlKey": "{{controlKey}}",
+    "formConfig": {
+      "layout": "vertical",
+      "columns": 1,
+      "labelCol": {
+        "span": 24
+      }
+    },
+    "formItemConfig": [
+      {
+        "field": "didMount",
+        "labelProps": {
+          "label": "渲染完成",
+          "tip": "表格渲染完成后执行"
+        },
+        "controlProps": {
+          "type": "[[Input]]",
+          "props": {
+            "allowSpace": true,
+            "type": "input",
+            "placeholder": "配置函数",
+            "onClick": "{{Service.didMount_onClick}}"
+          }
+        }
+      },
+      {
+        "field": "observer",
+        "labelProps": {
+          "label": "属性监听"
+        },
+        "controlProps": {
+          "type": "[[Input]]",
+          "props": {
+            "placeholder": "配置监听器",
+            "onClick": "{{Service.observer_onClick}}"
+          }
+        }
+      }
+    ]
+  }
+}

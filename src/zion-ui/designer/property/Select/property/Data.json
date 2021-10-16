@@ -1,0 +1,45 @@
+{
+  "type": "[[Form]]",
+  "props": {
+    "controlKey": "{{controlKey}}",
+    "formConfig": {
+      "layout": "vertical",
+      "columns": 1,
+      "labelCol": {
+        "span": 24
+      }
+    },
+    "formItemConfig": [
+      {
+        "field": "value",
+        "labelProps": {
+          "label": "实际值"
+        },
+        "controlProps": {
+          "type": "[[Input]]",
+          "props": {
+            "style": {
+              "width": "100%"
+            },
+            "onChange": "{{Service.value_onChange}}"
+          }
+        }
+      },
+      {
+        "field": "dataSource",
+        "labelProps": {
+          "label": "数据源"
+        },
+        "controlProps": {
+          "type": "[[Input]]",
+          "props": {
+            "style": {
+              "width": "100%"
+            },
+            "onClick": "{{Service.dataSource_onClick}}"
+          }
+        }
+      }
+    ]
+  }
+}

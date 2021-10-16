@@ -1,0 +1,346 @@
+{
+	"pageId": "$$pageId",
+	"controlList": [
+		{
+			"$$rowKey": "VAR.CONTROL.Form$$77cc24aeaf2a46cf9fc10f6008771a6c_getFormData",
+			"controlKey": "VAR.CONTROL.Form$$77cc24aeaf2a46cf9fc10f6008771a6c",
+			"keyPath": "getFormData",
+			"type": "Form",
+			"name": "表单变量",
+			"desc": "表单"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.Table$$6a53bde5caf140ff90ce105100e37837_pagination.page",
+			"controlKey": "VAR.CONTROL.Table$$6a53bde5caf140ff90ce105100e37837",
+			"keyPath": "pagination.page",
+			"type": "Table",
+			"name": "角色表格"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.Table$$6a53bde5caf140ff90ce105100e37837_pagination.pageSize",
+			"controlKey": "VAR.CONTROL.Table$$6a53bde5caf140ff90ce105100e37837",
+			"keyPath": "pagination.pageSize",
+			"type": "Table",
+			"name": "角色表格"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.Table$$6a53bde5caf140ff90ce105100e37837_rowSelection.checkedRows",
+			"controlKey": "VAR.CONTROL.Table$$6a53bde5caf140ff90ce105100e37837",
+			"keyPath": "rowSelection.checkedRows",
+			"type": "Table",
+			"name": "角色表格"
+		}
+	],
+	"functionConfig": [
+		{
+			"$$rowKey": "Function$$64c7a221aff84feca8df6b1012ddb41b",
+			"controlKey": "Function$$64c7a221aff84feca8df6b1012ddb41b",
+			"title": "表格查询",
+			"type": [
+				"DataApi",
+				"DataApi.showTableData"
+			],
+			"inputParams": [
+				{
+					"key": "jsonSchema",
+					"value": "{\"templateType\":\"LIST\",\"resSchema\":{\"$schema\":\"http://json-schema.org/draft-06/schema#\",\"_type\":\"OBJECT\",\"type\":\"object\",\"properties\":{\"msg\":{\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"提示消息\"},\"result\":{\"_type\":\"OBJECT\",\"type\":\"object\",\"title\":\"返回结果\",\"properties\":{\"data\":{\"_type\":\"OBJECT_ARRAY\",\"type\":\"array\",\"title\":\"返回数据集合\",\"items\":{\"_type\":\"OBJECT\",\"type\":\"object\",\"title\":\"返回数据集合\",\"properties\":{\"create_user_id\":{\"_dateEngineFieldType\":\"INT\",\"_fieldSize\":20,\"_dateEngineFieldDataType\":\"NORMAL\",\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"创建人主键\"},\"last_update_time\":{\"_dateEngineFieldType\":\"DATE_TIME\",\"_fieldSize\":0,\"_dateEngineFieldDataType\":\"NORMAL\",\"_type\":\"DATETIME\",\"type\":\"string\",\"title\":\"最后修改时间\"},\"sequence\":{\"_dateEngineFieldType\":\"INT\",\"_fieldSize\":8,\"_dateEngineFieldDataType\":\"NORMAL\",\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"排序序号\"},\"create_time\":{\"_dateEngineFieldType\":\"DATE_TIME\",\"_fieldSize\":0,\"_dateEngineFieldDataType\":\"NORMAL\",\"_type\":\"DATETIME\",\"type\":\"string\",\"title\":\"创建时间\"},\"create_user_name\":{\"_dateEngineFieldType\":\"STRING\",\"_fieldSize\":32,\"_dateEngineFieldDataType\":\"NORMAL\",\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"创建人名称\"},\"name\":{\"_dateEngineFieldType\":\"STRING\",\"_fieldSize\":32,\"_dateEngineFieldDataType\":\"NORMAL\",\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"角色名称\"},\"remark\":{\"_dateEngineFieldType\":\"TEXT\",\"_fieldSize\":300,\"_dateEngineFieldDataType\":\"NORMAL\",\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"备注\",\"maxLength\":300},\"id\":{\"_dateEngineFieldType\":\"INT\",\"_fieldSize\":20,\"_dateEngineFieldDataType\":\"PK\",\"_type\":\"STRING\",\"_fieldUse\":1,\"type\":\"string\",\"title\":\"主键\"},\"last_update_user_id\":{\"_dateEngineFieldType\":\"INT\",\"_fieldSize\":20,\"_dateEngineFieldDataType\":\"NORMAL\",\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"最后修改人主键\"},\"last_update_user_name\":{\"_dateEngineFieldType\":\"STRING\",\"_fieldSize\":32,\"_dateEngineFieldDataType\":\"NORMAL\",\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"最后修改人名称\"}}}},\"totalCount\":{\"_type\":\"INTEGER\",\"type\":\"integer\",\"title\":\"总记录数\"}}},\"code\":{\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"返回码\"},\"timestamp\":{\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"时间戳\"}}},\"isAsync\":1,\"resourcePath\":\"1343519969148809216_list_1622261415535\",\"name\":\"查询[角色信息表]列表信息\",\"requestAgreement\":\"POST\",\"reqSchema\":{\"$schema\":\"http://json-schema.org/draft-06/schema#\",\"_type\":\"OBJECT\",\"type\":\"object\",\"properties\":{\"_page\":{\"_type\":\"OBJECT\",\"type\":\"object\",\"title\":\"分页参数\",\"properties\":{\"size\":{\"_type\":\"INTEGER\",\"type\":\"integer\",\"title\":\"请求数量\"},\"from\":{\"_type\":\"INTEGER\",\"type\":\"integer\",\"title\":\"起始位移\"}}},\"_needTotal\":{\"_type\":\"BOOLEAN\",\"type\":\"boolean\",\"title\":\"是否返回总数\"},\"_searchCondRel\":{\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"全文检索关联关系\",\"enum\":[\"and\",\"or\"]},\"_condRel\":{\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"条件关联关系\",\"enum\":[\"and\",\"or\"]},\"_cond\":{\"_type\":\"OBJECT_ARRAY\",\"type\":\"array\",\"title\":\"条件参数\",\"items\":{\"_type\":\"OBJECT\",\"type\":\"object\",\"title\":\"条件参数\",\"properties\":{\"field\":{\"_enumValueDescription\":{\"create_user_id\":{\"_type\":\"STRING\",\"description\":\"创建人主键\"},\"last_update_time\":{\"_type\":\"DATETIME\",\"description\":\"最后修改时间\"},\"sequence\":{\"_type\":\"STRING\",\"description\":\"排序序号\"},\"create_time\":{\"_type\":\"DATETIME\",\"description\":\"创建时间\"},\"create_user_name\":{\"_type\":\"STRING\",\"description\":\"创建人名称\"},\"name\":{\"_type\":\"STRING\",\"description\":\"角色名称\"},\"remark\":{\"_type\":\"STRING\",\"description\":\"备注\"},\"id\":{\"_type\":\"STRING\",\"description\":\"主键\"},\"last_update_user_id\":{\"_type\":\"STRING\",\"description\":\"最后修改人主键\"},\"last_update_user_name\":{\"_type\":\"STRING\",\"description\":\"最后修改人名称\"}},\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"条件字段\",\"enum\":[\"create_user_id\",\"last_update_time\",\"sequence\",\"create_time\",\"create_user_name\",\"name\",\"remark\",\"id\",\"last_update_user_id\",\"last_update_user_name\"]},\"method\":{\"_enumValueDescription\":{\"greaterEqu\":{\"paramAmount\":1,\"name\":\"greaterEqu\",\"description\":\"大于等于\"},\"in\":{\"paramAmount\":1,\"name\":\"in\",\"description\":\"在范围内\"},\"like\":{\"paramAmount\":1,\"name\":\"like\",\"description\":\"包含\"},\"notBetween\":{\"paramAmount\":2,\"name\":\"notBetween\",\"description\":\"不介于\"},\"equ\":{\"paramAmount\":1,\"name\":\"equ\",\"description\":\"等于\"},\"startNotWith\":{\"paramAmount\":1,\"name\":\"startNotWith\",\"description\":\"不开始以\"},\"less\":{\"paramAmount\":1,\"name\":\"less\",\"description\":\"小于\"},\"endNotWith\":{\"paramAmount\":1,\"name\":\"endNotWith\",\"description\":\"不结尾以\"},\"empty\":{\"paramAmount\":0,\"name\":\"empty\",\"description\":\"为空\"},\"notEqu\":{\"paramAmount\":1,\"name\":\"notEqu\",\"description\":\"不等于\"},\"lessEqu\":{\"paramAmount\":1,\"name\":\"lessEqu\",\"description\":\"小于等于\"},\"notLike\":{\"paramAmount\":1,\"name\":\"notLike\",\"description\":\"不包含\"},\"endWith\":{\"paramAmount\":1,\"name\":\"endWith\",\"description\":\"结尾以\"},\"notIn\":{\"paramAmount\":1,\"name\":\"notIn\",\"description\":\"不在范围内\"},\"notEmpty\":{\"paramAmount\":0,\"name\":\"notEmpty\",\"description\":\"不为空\"},\"greater\":{\"paramAmount\":1,\"name\":\"greater\",\"description\":\"大于\"},\"between\":{\"paramAmount\":2,\"name\":\"between\",\"description\":\"介于\"},\"startWith\":{\"paramAmount\":1,\"name\":\"startWith\",\"description\":\"开始以\"}},\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"条件操作符\",\"enum\":[\"greaterEqu\",\"in\",\"like\",\"notBetween\",\"equ\",\"startNotWith\",\"less\",\"endNotWith\",\"empty\",\"notEqu\",\"lessEqu\",\"notLike\",\"endWith\",\"notIn\",\"notEmpty\",\"greater\",\"between\",\"startWith\"]},\"value\":{\"_type\":\"STRING_ARRAY\",\"type\":\"array\",\"title\":\"条件值\",\"items\":{\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"条件值\"}}}}},\"_search\":{\"_type\":\"OBJECT\",\"type\":\"object\",\"title\":\"全文检索参数\",\"properties\":{\"fields\":{\"_type\":\"OBJECT_ARRAY\",\"type\":\"array\",\"title\":\"全文检索字段列表\",\"items\":{\"_type\":\"OBJECT\",\"type\":\"object\",\"title\":\"全文检索字段列表\",\"properties\":{\"field\":{\"_enumValueDescription\":{\"create_user_id\":{\"_type\":\"STRING\",\"description\":\"创建人主键\"},\"last_update_time\":{\"_type\":\"DATETIME\",\"description\":\"最后修改时间\"},\"sequence\":{\"_type\":\"STRING\",\"description\":\"排序序号\"},\"create_time\":{\"_type\":\"DATETIME\",\"description\":\"创建时间\"},\"create_user_name\":{\"_type\":\"STRING\",\"description\":\"创建人名称\"},\"name\":{\"_type\":\"STRING\",\"description\":\"角色名称\"},\"remark\":{\"_type\":\"STRING\",\"description\":\"备注\"},\"id\":{\"_type\":\"STRING\",\"description\":\"主键\"},\"last_update_user_id\":{\"_type\":\"STRING\",\"description\":\"最后修改人主键\"},\"last_update_user_name\":{\"_type\":\"STRING\",\"description\":\"最后修改人名称\"}},\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"文检索字段\",\"enum\":[\"create_user_id\",\"last_update_time\",\"sequence\",\"create_time\",\"create_user_name\",\"name\",\"remark\",\"id\",\"last_update_user_id\",\"last_update_user_name\"]}}}},\"value\":{\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"全文检索值\"}}},\"_sort\":{\"_type\":\"OBJECT_ARRAY\",\"type\":\"array\",\"title\":\"排序参数\",\"items\":{\"_type\":\"OBJECT\",\"type\":\"object\",\"title\":\"排序参数\",\"properties\":{\"field\":{\"_enumValueDescription\":{\"create_user_id\":{\"_type\":\"STRING\",\"description\":\"创建人主键\"},\"last_update_time\":{\"_type\":\"DATETIME\",\"description\":\"最后修改时间\"},\"sequence\":{\"_type\":\"STRING\",\"description\":\"排序序号\"},\"create_time\":{\"_type\":\"DATETIME\",\"description\":\"创建时间\"},\"create_user_name\":{\"_type\":\"STRING\",\"description\":\"创建人名称\"},\"name\":{\"_type\":\"STRING\",\"description\":\"角色名称\"},\"remark\":{\"_type\":\"STRING\",\"description\":\"备注\"},\"id\":{\"_type\":\"STRING\",\"description\":\"主键\"},\"last_update_user_id\":{\"_type\":\"STRING\",\"description\":\"最后修改人主键\"},\"last_update_user_name\":{\"_type\":\"STRING\",\"description\":\"最后修改人名称\"}},\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"排序字段\",\"enum\":[\"create_user_id\",\"last_update_time\",\"sequence\",\"create_time\",\"create_user_name\",\"name\",\"remark\",\"id\",\"last_update_user_id\",\"last_update_user_name\"]},\"order\":{\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"排序类型\",\"enum\":[\"asc\",\"desc\"]}}}}}},\"type\":\"api\",\"desc\":\"查询[角色信息表]列表信息\",\"resourceType\":\"json\"}"
+				},
+				{
+					"key": "controlKey",
+					"value": "Table$$6a53bde5caf140ff90ce105100e37837"
+				}
+			]
+		},
+		{
+			"$$rowKey": "Function$$97220a7dd9584a479b0b200ab950c648",
+			"controlKey": "Function$$97220a7dd9584a479b0b200ab950c648",
+			"title": "打开新建角色弹窗",
+			"type": [
+				"Action",
+				"Action.openPopModal"
+			],
+			"inputParams": [
+				{
+					"key": "title",
+					"value": "新建角色"
+				},
+				{
+					"key": "width",
+					"value": "600px"
+				},
+				{
+					"key": "height",
+					"value": "300px"
+				},
+				{
+					"key": "content",
+					"{{value}}": "Component$$c1629269b31649b4b628cff4db1496ff"
+				},
+				{
+					"key": "onOk",
+					"{{value}}": "Function$$8a527a18f6ec4d5b8e648c5b86aacaa4"
+				},
+				{
+					"key": "onCancel"
+				},
+				{
+					"key": "footer"
+				},
+				{
+					"key": "fullScreen"
+				}
+			]
+		},
+		{
+			"$$rowKey": "Function$$8a527a18f6ec4d5b8e648c5b86aacaa4",
+			"controlKey": "Function$$8a527a18f6ec4d5b8e648c5b86aacaa4",
+			"title": "表单提交",
+			"type": [
+				"DataApi",
+				"DataApi.submitForm"
+			],
+			"inputParams": [
+				{
+					"key": "controlKey",
+					"value": "Form$$77cc24aeaf2a46cf9fc10f6008771a6c"
+				},
+				{
+					"key": "jsonSchema",
+					"value": "{\"templateType\":\"INSERT\",\"resSchema\":{\"$schema\":\"http://json-schema.org/draft-06/schema#\",\"_type\":\"OBJECT\",\"type\":\"object\",\"properties\":{\"msg\":{\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"提示消息\"},\"result\":{\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"返回结果\"},\"code\":{\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"返回码\"},\"timestamp\":{\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"时间戳\"}}},\"isAsync\":1,\"resourcePath\":\"1343519969148809216_insert_1622261414881\",\"name\":\"新增[角色信息表]表信息\",\"requestAgreement\":\"POST\",\"reqSchema\":{\"$schema\":\"http://json-schema.org/draft-06/schema#\",\"_type\":\"OBJECT\",\"type\":\"object\",\"properties\":{\"name\":{\"_dateEngineFieldType\":\"STRING\",\"_fieldSize\":32,\"_dateEngineFieldDataType\":\"NORMAL\",\"_required\":true,\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"角色名称\"},\"remark\":{\"_dateEngineFieldType\":\"TEXT\",\"_fieldSize\":300,\"_dateEngineFieldDataType\":\"NORMAL\",\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"备注\",\"maxLength\":300}},\"required\":[\"name\"]},\"type\":\"api\",\"desc\":\"新增[角色信息表]表信息\",\"resourceType\":\"json\"}"
+				},
+				{
+					"key": "callback",
+					"value": "Function$$64c7a221aff84feca8df6b1012ddb41b"
+				},
+				{
+					"key": "mode",
+					"value": "ALL"
+				}
+			]
+		},
+		{
+			"$$rowKey": "Function$$66d348d8c8cc47798c63b97a277a3285",
+			"controlKey": "Function$$66d348d8c8cc47798c63b97a277a3285",
+			"title": "删除角色信息",
+			"type": [
+				"DataApi",
+				"DataApi.deleteData"
+			],
+			"inputParams": [
+				{
+					"key": "controlKey",
+					"value": "VAR.CONTROL.Table$$6a53bde5caf140ff90ce105100e37837_rowSelection.checkedRows"
+				},
+				{
+					"key": "jsonSchema",
+					"value": "{\"resSchema\":{\"$schema\":\"http://json-schema.org/draft-06/schema#\",\"_type\":\"OBJECT\",\"type\":\"object\",\"properties\":{\"msg\":{\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"提示消息\"},\"result\":{\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"返回结果\"},\"code\":{\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"返回码\"},\"timestamp\":{\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"时间戳\"}}},\"isAsync\":1,\"resourcePath\":\"1343519969148809216_del_1620293772283\",\"name\":\"删除[角色信息表]表信息\",\"requestAgreement\":\"POST\",\"reqSchema\":{\"$schema\":\"http://json-schema.org/draft-06/schema#\",\"_type\":\"OBJECT\",\"type\":\"object\",\"properties\":{\"id\":{\"_required\":true,\"_type\":\"STRING_ARRAY\",\"type\":\"array\",\"title\":\"主键集合\",\"items\":{\"_type\":\"STRING\",\"description\":\"主键集合\",\"_fieldUse\":1,\"type\":\"string\",\"title\":\"主键集合\"}}},\"required\":[\"id\"]},\"type\":\"api\",\"desc\":\"删除[角色信息表]表信息\",\"resourceType\":\"json\"}"
+				},
+				{
+					"key": "callback",
+					"value": "Function$$64c7a221aff84feca8df6b1012ddb41b"
+				}
+			]
+		}
+	],
+	"componentConfig": [
+		{
+			"$$rowKey": "Component$$c1629269b31649b4b628cff4db1496ff",
+			"controlKey": "Component$$c1629269b31649b4b628cff4db1496ff",
+			"title": "新建角色表单",
+			"type": "Form",
+			"config": {
+				"type": "[[Form]]",
+				"props": {
+					"controlKey": "Form$$77cc24aeaf2a46cf9fc10f6008771a6c",
+					"formConfig": {
+						"columns": 1,
+						"layout": "vertical",
+						"labelCol": {
+							"span": 24
+						},
+						"wrapperCol": {
+							"span": 24
+						}
+					},
+					"formItemConfig": [
+						{
+							"field": "name",
+							"labelProps": {
+								"label": "角色名称",
+								"required": true
+							},
+							"controlProps": {
+								"type": "[[Input]]",
+								"props": {
+									"controlKey": "Input$$1dfa5444d6134369b75a9be3c520508d",
+									"style": {
+										"width": "100%"
+									}
+								}
+							}
+						},
+						{
+							"field": "remark",
+							"labelProps": {
+								"label": "备注",
+								"help": ""
+							},
+							"controlProps": {
+								"type": "[[Input]]",
+								"props": {
+									"controlKey": "Input$$4d1212c9c3064749b5287a4cd2ce7389",
+									"style": {
+										"width": "100%",
+										"height": "120px"
+									},
+									"type": "textArea"
+								}
+							}
+						}
+					]
+				}
+			}
+		}
+	],
+	"varConfig": [],
+	"layout": {
+		"type": "[[Row]]",
+		"props": {},
+		"children": [
+			{
+				"type": "[[Col]]",
+				"props": {
+					"style": {
+						"padding": "0px 5px",
+						"width": "100%"
+					}
+				},
+				"children": [
+					{
+						"type": "[[Table]]",
+						"props": {
+							"controlKey": "Table$$6a53bde5caf140ff90ce105100e37837",
+							"columns": [
+								{
+									"title": "角色名称",
+									"dataIndex": "name",
+									"show": true
+								},
+								{
+									"title": "备注",
+									"dataIndex": "remark",
+									"show": true
+								},
+								{
+									"title": "排序序号",
+									"dataIndex": "sequence",
+									"show": true
+								},
+								{
+									"title": "创建时间",
+									"dataIndex": "create_time",
+									"show": true
+								}
+							],
+							"dataSource": [],
+							"bordered": false,
+							"pagination": {
+								"show": true
+							},
+							"httpConfig": {
+								"{{init}}": "Function$$64c7a221aff84feca8df6b1012ddb41b",
+								"{{onSearch}}": "Function$$64c7a221aff84feca8df6b1012ddb41b",
+								"{{delete}}": "Function$$66d348d8c8cc47798c63b97a277a3285"
+							},
+							"header": {
+								"show": true,
+								"onlySearch": false,
+								"title": {
+									"span": 20,
+									"content": ""
+								},
+								"searchInput": {
+									"span": 0,
+									"placeholder": ""
+								},
+								"headerButton": {
+									"span": "3",
+									"button": [
+										{
+											"text": "新建",
+											"show": true,
+											"btnCode": "CREATE_BUTTON",
+											"$$rowKey": "8f19c3b5141448628a63395026b9925d",
+											"{{onClick}}": "Function$$97220a7dd9584a479b0b200ab950c648"
+										},
+										{
+											"text": "导入",
+											"show": false,
+											"btnCode": "IMPORT_BUTTON",
+											"$$rowKey": "f458cac31dd54b37a697b657f077a7e8"
+										},
+										{
+											"text": "导出",
+											"show": false,
+											"btnCode": "EXPORT_BUTTON",
+											"$$rowKey": "bcdf3411a46e4b10aee8b8c1b4ddc754"
+										},
+										{
+											"text": "批量删除",
+											"show": true,
+											"btnCode": "HEADER_DELETE_BUTTON",
+											"$$rowKey": "be98955a624446b280986d720ea8abe0",
+											"{{onClick}}": "Function$$66d348d8c8cc47798c63b97a277a3285"
+										}
+									]
+								},
+								"filterSetting": {
+									"span": 0
+								},
+								"customerColumns": {
+									"span": 0
+								},
+								"refreshButton": {
+									"span": 1
+								},
+								"fullscreenButton": {
+									"span": 0
+								}
+							},
+							"buttonConfig": {
+								"rowButton": [
+									{
+										"text": "修改",
+										"color": "#1890ff"
+									},
+									{
+										"text": "详情",
+										"color": "#1890ff"
+									},
+									{
+										"text": "机构授权",
+										"color": "#1890ff"
+									},
+									{
+										"text": "功能授权",
+										"color": "#1890ff"
+									},
+									{
+										"text": "操控授权",
+										"color": "#1890ff"
+									}
+								],
+								"align": "left",
+								"width": "140px"
+							},
+							"rowSelection": {
+								"show": true,
+								"mode": "checkbox"
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

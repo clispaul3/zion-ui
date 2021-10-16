@@ -1,0 +1,94 @@
+{
+	"type": "[[Form]]",
+	"props": {
+		"controlKey": "{{controlKey}}",
+		"formConfig": {
+			"layout": "vertical",
+			"columns": 1,
+			"labelCol": {
+				"span": 24
+			}
+		},
+		"formItemConfig": [
+			{
+				"field": "controlKey",
+				"labelProps": {
+					"label": "控件编码"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"disabled": true
+					}
+				}
+			},
+			{
+				"field": "className",
+				"labelProps": {
+					"label": "类名",
+					"help": "输入类名，多个用空格隔开"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"allowSpace": true,
+						"type": "input",
+						"placeholder": "输入类名",
+						"onChange": "{{Service.className_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "style",
+				"labelProps": {
+					"label": "样式"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"onClick": "{{Service.style_onClick}}",
+						"disableOnChange": true,
+						"placeholder": "输入样式"
+					}
+				}
+			},
+			{
+				"field": "placement",
+				"labelProps": {
+					"label": "排列方式"
+				},
+				"controlProps": {
+					"type": "[[Select]]",
+					"props": {
+						"dataSource": [
+							{
+								"key": "inline",
+								"label": "水平"
+							},
+							{
+								"key": "vertical",
+								"label": "垂直"
+							}
+						],
+						"value": "inline",
+						"onChange": "{{Service.placement_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "disabled",
+				"labelProps": {
+					"label": "是否禁用"
+				},
+				"controlProps": {
+					"type": "[[Switch]]",
+					"props": {
+						"checkedChildren": "是",
+						"unCheckedChildren": "否",
+						"onChange": "{{Service.disabled_onChange}}"
+					}
+				}
+			}
+		]
+	}
+}

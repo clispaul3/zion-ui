@@ -1,0 +1,138 @@
+{
+  "type": "[[Form]]",
+  "props": {
+    "controlKey": "{{controlKey.FORM}}",
+    "style": {
+      "padding": "20px"
+    },
+    "formConfig": {
+      "columns": 1,
+      "labelCol": {
+        "span": 6
+      },
+      "wrapperCol": {
+        "span": 12
+      }
+    },
+    "formItemConfig": [
+      {
+        "field": "username",
+        "labelProps": {
+          "label": "姓名",
+          "required": true
+        },
+        "controlProps": {
+          "type": "[[Input]]",
+          "props": {
+            "placeholder": "输入用户名",
+            "value": "",
+            "style": {
+              "width": "100%"
+            }
+          }
+        }
+      },
+      {
+        "field": "sex",
+        "labelProps": {
+          "label": "性别",
+          "required": true
+        },
+        "controlProps": {
+          "type": "[[Radio]]",
+          "props": {
+            "value": "female",
+            "dataSource": [
+              {
+                "key": "male",
+                "label": "男"
+              },
+              {
+                "key": "female",
+                "label": "女"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "field": "isMarry",
+        "labelProps": {
+          "label": "是否婚配"
+        },
+        "controlProps": {
+          "type": "[[Switch]]",
+          "props": {
+            "value": false,
+            "unCheckedChildren": "否",
+            "checkedChildren": "是"
+          }
+        }
+      },
+      {
+        "field": "hobby",
+        "labelProps": {
+          "label": "爱好",
+          "required": true
+        },
+        "controlProps": {
+          "type": "[[Checkbox]]",
+          "props": {
+            "value": [
+              "001"
+            ],
+            "dataSource": [
+              {
+                "key": "001",
+                "label": "篮球"
+              },
+              {
+                "key": "002",
+                "label": "足球"
+              },
+              {
+                "key": "003",
+                "label": "排球"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "field": "age",
+        "labelProps": {
+          "label": "年龄",
+          "required": true
+        },
+        "controlProps": {
+          "type": "[[Slider]]",
+          "props": {
+            "value": 18,
+            "min": 0,
+            "max": 120,
+            "style": {
+              "width": "80%"
+            }
+          }
+        }
+      },
+      {
+        "field": "appearance",
+        "labelProps": {
+          "label": "颜值",
+          "required": false
+        },
+        "controlProps": {
+          "type": "[[Rate]]",
+          "props": {
+            "count": 10,
+            "value": 6,
+            "style": {
+              "width": "100%"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

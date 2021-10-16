@@ -1,0 +1,30 @@
+{
+  "type": "[[Form]]",
+  "props": {
+    "controlKey": "{{controlKey}}",
+    "formConfig": {
+      "layout": "vertical",
+      "columns": 1,
+      "labelCol": {
+        "span": 24
+      }
+    },
+    "formItemConfig": [
+      {
+        "field": "onClick",
+        "labelProps": {
+          "label": "点击事件"
+        },
+        "controlProps": {
+          "type": "[[Input]]",
+          "props": {
+            "onClick": "{{Service.onClick_onClick}}",
+            "allowSpace": true,
+            "type": "input",
+            "placeholder": "请选择"
+          }
+        }
+      }
+    ]
+  }
+}

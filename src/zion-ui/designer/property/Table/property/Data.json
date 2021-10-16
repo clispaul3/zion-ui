@@ -1,0 +1,60 @@
+{
+	"type": "[[Form]]",
+	"props": {
+		"controlKey": "{{controlKey}}",
+		"formConfig": {
+			"layout": "vertical",
+			"columns": 1,
+			"labelCol": {
+				"span": 24
+			}
+		},
+		"formItemConfig": [
+			{
+				"field": "httpConfig.{{init}}",
+				"labelProps": {
+					"label": "初始化"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"style": {
+							"width": "100%"
+						},
+						"onClick": "{{Service.httpConfigInit_onClick}}"
+					}
+				}
+			},
+			{
+				"field": "httpConfig.{{onSearch}}",
+				"labelProps": {
+					"label": "动态查询"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"style": {
+							"width": "100%"
+						},
+						"onClick": "{{Service.httpConfigOnSearch_onClick}}"
+					}
+				}
+			},
+			{
+				"field": "httpConfig.{{delete}}",
+				"labelProps": {
+					"label": "数据删除"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"style": {
+							"width": "100%"
+						},
+						"onClick": "{{Service.httpConfigDelete_onClick}}"
+					}
+				}
+			}
+		]
+	}
+}

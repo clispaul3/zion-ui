@@ -1,0 +1,32 @@
+{
+  "type": "[[Table]]",
+  "props": {
+    "controlKey": "{{Service.controlKey.Table}}",
+    "rowKey": "parameter",
+    "columns": [
+      {
+        "title": "方法",
+        "dataIndex": "fuc"
+      },
+      {
+        "title": "参数",
+        "dataIndex": "parameter",
+        "render": "{{Service.renderParameter}}"
+      },
+      {
+        "title": "说明",
+        "dataIndex": "instructions",
+        "render": "{{Service.renderInstructions}}"
+      },
+      {
+        "title": "默认值",
+        "dataIndex": "default"
+      }
+    ],
+    "scroll": "{{Service.render_scroll}}",
+    "bordered": false,
+    "httpConfig": {
+      "init": "{{Service.table_httpConfig.init}}"
+    }
+  }
+}

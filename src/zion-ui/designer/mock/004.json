@@ -1,0 +1,561 @@
+{
+	"pageId": "$$pageId",
+	"controlList": [
+		{
+			"$$rowKey": "VAR.CONTROL.Form$$9566c0d8fcb2482e8f101ede8700bd2e_getFormData",
+			"controlKey": "VAR.CONTROL.Form$$9566c0d8fcb2482e8f101ede8700bd2e",
+			"keyPath": "getFormData",
+			"type": "Form",
+			"name": "表单变量",
+			"desc": "表单"
+		}
+	],
+	"functionConfig": [
+		{
+			"$$rowKey": "Function$$17557355867f49e5822d30d6d7088661",
+			"controlKey": "Function$$17557355867f49e5822d30d6d7088661",
+			"title": "打开一个窗口",
+			"type": [
+				"Action",
+				"Action.openPopModal"
+			],
+			"inputParams": [
+				{
+					"key": "title",
+					"value": "测试弹窗标题"
+				},
+				{
+					"key": "width",
+					"value": "60%"
+				},
+				{
+					"key": "height",
+					"value": ""
+				},
+				{
+					"key": "content",
+					"{{value}}": "Component$$e87ac6ea78854a79bf5dca6b21f953e8"
+				},
+				{
+					"key": "onOk",
+					"value": ""
+				},
+				{
+					"key": "onCancel",
+					"value": ""
+				},
+				{
+					"key": "footer",
+					"{{value}}": "Component$$2edf55fc38ca478492e04fd06d547376"
+				},
+				{
+					"key": "fullScreen",
+					"value": true
+				}
+			]
+		},
+		{
+			"$$rowKey": "Function$$7a2ceb44e01a4065ace02b35b821f448",
+			"controlKey": "Function$$7a2ceb44e01a4065ace02b35b821f448",
+			"title": "表单提交函数",
+			"type": [
+				"DataApi",
+				"DataApi.submitForm"
+			],
+			"inputParams": [
+				{
+					"key": "controlKey",
+					"value": "VAR.CONTROL.Form$$9566c0d8fcb2482e8f101ede8700bd2e_getFormData"
+				},
+				{
+					"key": "jsonSchema",
+					"value": "{\"templateType\":\"INSERT\",\"resSchema\":{\"$schema\":\"http://json-schema.org/draft-06/schema#\",\"_type\":\"OBJECT\",\"type\":\"object\",\"properties\":{\"msg\":{\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"提示消息\"},\"result\":{\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"返回结果\"},\"code\":{\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"返回码\"},\"timestamp\":{\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"时间戳\"}}},\"isAsync\":1,\"resourcePath\":\"1406940000611872768_insert_1624275617044\",\"name\":\"新增[树形数据演示5]表信息\",\"requestAgreement\":\"POST\",\"reqSchema\":{\"$schema\":\"http://json-schema.org/draft-06/schema#\",\"_type\":\"OBJECT\",\"type\":\"object\",\"properties\":{\"name\":{\"_dateEngineFieldType\":\"STRING\",\"_fieldSize\":32,\"_species\":\"BIS_TMPL\",\"_dateEngineFieldDataType\":\"NORMAL\",\"_required\":true,\"_type\":\"STRING\",\"type\":\"string\",\"title\":\"名称\"},\"pid\":{\"_dateEngineFieldType\":\"INT\",\"_fieldSize\":20,\"_species\":\"BIS_TMPL\",\"_dateEngineFieldDataType\":\"FK\",\"_type\":\"STRING_NUMBER\",\"_fieldUse\":2,\"type\":\"string\",\"title\":\"父节点\"}},\"required\":[\"name\"]},\"type\":\"api\",\"desc\":\"新增[树形数据演示5]表信息\",\"resourceType\":\"json\"}"
+				}
+			]
+		}
+	],
+	"componentConfig": [
+		{
+			"$$rowKey": "Component$$e87ac6ea78854a79bf5dca6b21f953e8",
+			"controlKey": "Component$$e87ac6ea78854a79bf5dca6b21f953e8",
+			"title": "这是一个表单",
+			"type": "Form",
+			"config": {
+				"type": "[[Form]]",
+				"props": {
+					"controlKey": "Form$$117ea2d8a38f4d39bc4747f8ee3ecfe0",
+					"formConfig": {
+						"columns": "2",
+						"layout": "vertical",
+						"labelCol": {
+							"span": 24
+						},
+						"wrapperCol": {
+							"span": 24
+						}
+					},
+					"formItemConfig": [
+						{
+							"field": "expiretime",
+							"labelProps": {
+								"label": "expireTime"
+							},
+							"controlProps": {
+								"type": "[[Input]]",
+								"props": {
+									"controlKey": "Input$$838b3f8fc74342b8ba079b9f4013c6ed",
+									"style": {
+										"width": "100%"
+									},
+									"type": "number"
+								}
+							}
+						},
+						{
+							"field": "profileurl",
+							"labelProps": {
+								"label": "头像url"
+							},
+							"controlProps": {
+								"type": "[[Input]]",
+								"props": {
+									"controlKey": "Input$$e497c973bc354b1cbd21175df9b22ebe",
+									"style": {
+										"width": "100%"
+									}
+								}
+							}
+						},
+						{
+							"field": "provideruserid",
+							"labelProps": {
+								"label": "用户信息提供的用户id",
+								"required": true
+							},
+							"controlProps": {
+								"type": "[[Input]]",
+								"props": {
+									"controlKey": "Input$$ff32c986c47e4f5fbd7dfdd2c232bb06",
+									"style": {
+										"width": "100%"
+									}
+								}
+							}
+						},
+						{
+							"field": "providerid",
+							"labelProps": {
+								"label": "用户信息提供方id",
+								"required": true
+							},
+							"controlProps": {
+								"type": "[[Input]]",
+								"props": {
+									"controlKey": "Input$$fc91e64e23d9473db319b9a71e9dcd4a",
+									"style": {
+										"width": "100%"
+									}
+								}
+							}
+						},
+						{
+							"field": "displayname",
+							"labelProps": {
+								"label": "显示名称"
+							},
+							"controlProps": {
+								"type": "[[Input]]",
+								"props": {
+									"controlKey": "Input$$47c575db60c04d11ba2c8f9a435a544b",
+									"style": {
+										"width": "100%"
+									}
+								}
+							}
+						},
+						{
+							"field": "imageurl",
+							"labelProps": {
+								"label": "图片url"
+							},
+							"controlProps": {
+								"type": "[[Input]]",
+								"props": {
+									"controlKey": "Input$$380b538230114fbba7d36c450161b631",
+									"style": {
+										"width": "100%"
+									}
+								}
+							}
+						},
+						{
+							"field": "accesstoken",
+							"labelProps": {
+								"label": "accessToken",
+								"required": true
+							},
+							"controlProps": {
+								"type": "[[Input]]",
+								"props": {
+									"controlKey": "Input$$60a726aac47d49bc93176fb8a4d5f2cf",
+									"style": {
+										"width": "100%"
+									}
+								}
+							}
+						},
+						{
+							"field": "rank",
+							"labelProps": {
+								"label": "rank",
+								"required": true
+							},
+							"controlProps": {
+								"type": "[[Input]]",
+								"props": {
+									"controlKey": "Input$$c2ec86c42b434e1b89d40fce62a05b4e",
+									"style": {
+										"width": "100%"
+									},
+									"type": "number"
+								}
+							}
+						},
+						{
+							"field": "refreshtoken",
+							"labelProps": {
+								"label": "refreshToken"
+							},
+							"controlProps": {
+								"type": "[[Input]]",
+								"props": {
+									"controlKey": "Input$$2113b7036c044bbd83cb175a14760586",
+									"style": {
+										"width": "100%"
+									}
+								}
+							}
+						},
+						{
+							"field": "secret",
+							"labelProps": {
+								"label": "secret"
+							},
+							"controlProps": {
+								"type": "[[Input]]",
+								"props": {
+									"controlKey": "Input$$e2e8f8916ff544f1afcbefec665f560b",
+									"style": {
+										"width": "100%"
+									}
+								}
+							}
+						},
+						{
+							"field": "userid",
+							"labelProps": {
+								"label": "用户主键",
+								"required": true
+							},
+							"controlProps": {
+								"type": "[[Input]]",
+								"props": {
+									"controlKey": "Input$$131f78b9a5f04134bffe99894498f338",
+									"style": {
+										"width": "100%"
+									}
+								}
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"$$rowKey": "Component$$2edf55fc38ca478492e04fd06d547376",
+			"controlKey": "Component$$2edf55fc38ca478492e04fd06d547376",
+			"title": "这是表单的底部栏",
+			"type": "Layout",
+			"config": {
+				"type": "[[Row]]",
+				"props": {},
+				"children": [
+					{
+						"type": "[[Col]]",
+						"props": {
+							"style": {
+								"padding": "0px 5px",
+								"width": "100%"
+							}
+						},
+						"children": [
+							{
+								"type": "[[Button]]",
+								"props": {
+									"controlKey": "Button$$d345b16b219c42afa92d94a48ac975ed",
+									"text": "提交按钮",
+									"type": "primary",
+									"style": {
+										"display": "block"
+									}
+								}
+							}
+						]
+					}
+				]
+			}
+		}
+	],
+	"varConfig": [],
+	"layout": {
+		"type": "[[Row]]",
+		"props": {},
+		"children": [
+			{
+				"type": "[[Col]]",
+				"props": {
+					"style": {
+						"padding": "0px 5px",
+						"width": "100%"
+					}
+				},
+				"children": [
+					{
+						"type": "[[Form]]",
+						"props": {
+							"controlKey": "Form$$9566c0d8fcb2482e8f101ede8700bd2e",
+							"style": {
+								"padding": "50px",
+								"border": "3px solid red"
+							},
+							"formConfig": {
+								"columns": 1,
+								"layout": "vertical",
+								"labelCol": {
+									"span": 24
+								},
+								"wrapperCol": {
+									"span": 24
+								}
+							},
+							"formItemConfig": [
+								{
+									"field": "name",
+									"labelProps": {
+										"label": "名称",
+										"required": true
+									},
+									"controlProps": {
+										"type": "[[Input]]",
+										"props": {
+											"controlKey": "Input$$c3bb5eecdd1645b19018731b874a0227",
+											"style": {
+												"width": "100%"
+											}
+										}
+									}
+								},
+								{
+									"field": "pid",
+									"labelProps": {
+										"label": "父节点"
+									},
+									"controlProps": {
+										"type": "[[Input]]",
+										"props": {
+											"controlKey": "Input$$682db4f0bddf4c42a4721122e62d2942",
+											"style": {
+												"width": "100%"
+											},
+											"type": "number"
+										}
+									}
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"type": "[[Col]]",
+				"props": {
+					"style": {
+						"padding": "0px 5px",
+						"width": "100%"
+					}
+				},
+				"children": [
+					{
+						"type": "[[Button]]",
+						"props": {
+							"controlKey": "Button$$a9d94dce8ebf42feb0e83e5d5801378c",
+							"text": "提交",
+							"type": "success",
+							"style": {
+								"display": "block"
+							},
+							"{{onClick}}": "Function$$7a2ceb44e01a4065ace02b35b821f448"
+						}
+					}
+				]
+			},
+			{
+				"type": "[[Col]]",
+				"props": {
+					"style": {
+						"padding": "0px 5px",
+						"width": "100%"
+					}
+				},
+				"children": [
+					{
+						"type": "[[Button]]",
+						"props": {
+							"controlKey": "Button$$ab7fb96f6db346cbbb12e2a4b5d27834",
+							"text": "打开窗口",
+							"type": "primary",
+							"style": {
+								"display": "block"
+							},
+							"{{onClick}}": "Function$$17557355867f49e5822d30d6d7088661"
+						}
+					}
+				]
+			},
+			{
+				"type": "[[Col]]",
+				"props": {
+					"style": {
+						"padding": "0px 5px",
+						"width": "100%"
+					}
+				},
+				"children": [
+					{
+						"type": "[[Table]]",
+						"props": {
+							"controlKey": "Table$$bac13a4d4cc343c5a797fbd7910944bf",
+							"columns": [
+								{
+									"title": "序号",
+									"dataIndex": "",
+									"show": true,
+									"sorter": false,
+									"width": "50px",
+									"fixed": null
+								},
+								{
+									"title": "角色名称",
+									"dataIndex": "name",
+									"show": false
+								},
+								{
+									"title": "创建人主键",
+									"dataIndex": "create_user_id",
+									"show": false
+								},
+								{
+									"title": "备注",
+									"dataIndex": "remark",
+									"show": true
+								},
+								{
+									"title": "创建时间",
+									"dataIndex": "create_time",
+									"show": true
+								},
+								{
+									"title": "字段名称",
+									"dataIndex": "field_code$1",
+									"show": true,
+									"sorter": false,
+									"width": null,
+									"fixed": null
+								}
+							],
+							"dataSource": [],
+							"bordered": false,
+							"pagination": {
+								"show": true
+							},
+							"httpConfig": {
+								"{{init}}": "Function$$3fa1233889c54d46b778190b9592adc6"
+							},
+							"header": {
+								"show": true,
+								"onlySearch": false,
+								"title": {
+									"span": 21,
+									"content": ""
+								},
+								"searchInput": {
+									"span": 0,
+									"placeholder": ""
+								},
+								"headerButton": {
+									"span": "2",
+									"button": [
+										{
+											"text": "新建",
+											"show": true,
+											"btnCode": "CREATE_BUTTON",
+											"$$rowKey": "a0ebd2bcd0b24bd0910eb50d697029f5"
+										},
+										{
+											"text": "导入",
+											"show": false,
+											"btnCode": "IMPORT_BUTTON",
+											"$$rowKey": "74929f04493d44bd86911e81ceed1996"
+										},
+										{
+											"text": "导出",
+											"show": false,
+											"btnCode": "EXPORT_BUTTON",
+											"$$rowKey": "f9f177f46d00497f86ad664f43e485b4"
+										},
+										{
+											"text": "批量删除",
+											"show": false,
+											"btnCode": "HEADER_DELETE_BUTTON",
+											"$$rowKey": "2058976ee1a946519539515dd41f4351"
+										}
+									]
+								},
+								"filterSetting": {
+									"span": 0
+								},
+								"customerColumns": {
+									"span": 1
+								},
+								"refreshButton": {
+									"span": 0
+								},
+								"fullscreenButton": {
+									"span": 0
+								}
+							},
+							"buttonConfig": {
+								"rowButton": [
+									{
+										"text": "删除",
+										"color": "#1890ff"
+									},
+									{
+										"text": "修改",
+										"color": "#1890ff"
+									},
+									{
+										"text": "详情",
+										"color": "#1890ff"
+									}
+								],
+								"align": "left",
+								"width": "140px"
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

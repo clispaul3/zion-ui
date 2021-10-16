@@ -1,0 +1,643 @@
+{
+	"pageId": "$$pageId",
+	"controlList": [
+		{
+			"$$rowKey": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"key": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"controlKey": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Form",
+			"attr": null,
+			"desc": null
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.Input$$3a582a894fc048239c7d5a8c16587049_value",
+			"key": "VAR.CONTROL.Input$$3a582a894fc048239c7d5a8c16587049_value",
+			"controlKey": "Input$$3a582a894fc048239c7d5a8c16587049",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Input",
+			"attr": "value",
+			"desc": "实际值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.VAR.CONTROL.Input$$3a582a894fc048239c7d5a8c16587049_value_showValue",
+			"key": "VAR.CONTROL.VAR.CONTROL.Input$$3a582a894fc048239c7d5a8c16587049_value_showValue",
+			"controlKey": "Input$$3a582a894fc048239c7d5a8c16587049",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Input",
+			"attr": "showValue",
+			"desc": "显示值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.Input$$a59ef55690054b8186050ce1fbef992a_value",
+			"key": "VAR.CONTROL.Input$$a59ef55690054b8186050ce1fbef992a_value",
+			"controlKey": "Input$$a59ef55690054b8186050ce1fbef992a",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Input",
+			"attr": "value",
+			"desc": "实际值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.VAR.CONTROL.Input$$a59ef55690054b8186050ce1fbef992a_value_showValue",
+			"key": "VAR.CONTROL.VAR.CONTROL.Input$$a59ef55690054b8186050ce1fbef992a_value_showValue",
+			"controlKey": "Input$$a59ef55690054b8186050ce1fbef992a",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Input",
+			"attr": "showValue",
+			"desc": "显示值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.Input$$e99b6bb356c64e4cb32a93d51298ee62_value",
+			"key": "VAR.CONTROL.Input$$e99b6bb356c64e4cb32a93d51298ee62_value",
+			"controlKey": "Input$$e99b6bb356c64e4cb32a93d51298ee62",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Input",
+			"attr": "value",
+			"desc": "实际值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.VAR.CONTROL.Input$$e99b6bb356c64e4cb32a93d51298ee62_value_showValue",
+			"key": "VAR.CONTROL.VAR.CONTROL.Input$$e99b6bb356c64e4cb32a93d51298ee62_value_showValue",
+			"controlKey": "Input$$e99b6bb356c64e4cb32a93d51298ee62",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Input",
+			"attr": "showValue",
+			"desc": "显示值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.Input$$3aedfcda19284b4497831b5ef6da7007_value",
+			"key": "VAR.CONTROL.Input$$3aedfcda19284b4497831b5ef6da7007_value",
+			"controlKey": "Input$$3aedfcda19284b4497831b5ef6da7007",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Input",
+			"attr": "value",
+			"desc": "实际值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.VAR.CONTROL.Input$$3aedfcda19284b4497831b5ef6da7007_value_showValue",
+			"key": "VAR.CONTROL.VAR.CONTROL.Input$$3aedfcda19284b4497831b5ef6da7007_value_showValue",
+			"controlKey": "Input$$3aedfcda19284b4497831b5ef6da7007",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Input",
+			"attr": "showValue",
+			"desc": "显示值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.Input$$b2bc7c2c419a488a959f603c082e1d74_value",
+			"key": "VAR.CONTROL.Input$$b2bc7c2c419a488a959f603c082e1d74_value",
+			"controlKey": "Input$$b2bc7c2c419a488a959f603c082e1d74",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Input",
+			"attr": "value",
+			"desc": "实际值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.VAR.CONTROL.Input$$b2bc7c2c419a488a959f603c082e1d74_value_showValue",
+			"key": "VAR.CONTROL.VAR.CONTROL.Input$$b2bc7c2c419a488a959f603c082e1d74_value_showValue",
+			"controlKey": "Input$$b2bc7c2c419a488a959f603c082e1d74",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Input",
+			"attr": "showValue",
+			"desc": "显示值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.DateTime$$dc2753ce31054cfba32a0cf1f970da49_value",
+			"key": "VAR.CONTROL.DateTime$$dc2753ce31054cfba32a0cf1f970da49_value",
+			"controlKey": "DateTime$$dc2753ce31054cfba32a0cf1f970da49",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "DateTime",
+			"attr": "value",
+			"desc": "实际值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.Input$$2951da66f7e5416184af9608baaf87c1_value",
+			"key": "VAR.CONTROL.Input$$2951da66f7e5416184af9608baaf87c1_value",
+			"controlKey": "Input$$2951da66f7e5416184af9608baaf87c1",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Input",
+			"attr": "value",
+			"desc": "实际值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.VAR.CONTROL.Input$$2951da66f7e5416184af9608baaf87c1_value_showValue",
+			"key": "VAR.CONTROL.VAR.CONTROL.Input$$2951da66f7e5416184af9608baaf87c1_value_showValue",
+			"controlKey": "Input$$2951da66f7e5416184af9608baaf87c1",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Input",
+			"attr": "showValue",
+			"desc": "显示值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.Input$$868669b6e233468788fa6f78d2b40d21_value",
+			"key": "VAR.CONTROL.Input$$868669b6e233468788fa6f78d2b40d21_value",
+			"controlKey": "Input$$868669b6e233468788fa6f78d2b40d21",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Input",
+			"attr": "value",
+			"desc": "实际值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.VAR.CONTROL.Input$$868669b6e233468788fa6f78d2b40d21_value_showValue",
+			"key": "VAR.CONTROL.VAR.CONTROL.Input$$868669b6e233468788fa6f78d2b40d21_value_showValue",
+			"controlKey": "Input$$868669b6e233468788fa6f78d2b40d21",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Input",
+			"attr": "showValue",
+			"desc": "显示值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.Input$$51508442aa6a426d988bc8090e8c6922_value",
+			"key": "VAR.CONTROL.Input$$51508442aa6a426d988bc8090e8c6922_value",
+			"controlKey": "Input$$51508442aa6a426d988bc8090e8c6922",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Input",
+			"attr": "value",
+			"desc": "实际值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.VAR.CONTROL.Input$$51508442aa6a426d988bc8090e8c6922_value_showValue",
+			"key": "VAR.CONTROL.VAR.CONTROL.Input$$51508442aa6a426d988bc8090e8c6922_value_showValue",
+			"controlKey": "Input$$51508442aa6a426d988bc8090e8c6922",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Input",
+			"attr": "showValue",
+			"desc": "显示值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.DateTime$$0a9221b9ab9d4d34abdaad12a44660c7_value",
+			"key": "VAR.CONTROL.DateTime$$0a9221b9ab9d4d34abdaad12a44660c7_value",
+			"controlKey": "DateTime$$0a9221b9ab9d4d34abdaad12a44660c7",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "DateTime",
+			"attr": "value",
+			"desc": "实际值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.Input$$4139f029a75b458f95953dbdb67aa9f2_value",
+			"key": "VAR.CONTROL.Input$$4139f029a75b458f95953dbdb67aa9f2_value",
+			"controlKey": "Input$$4139f029a75b458f95953dbdb67aa9f2",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Input",
+			"attr": "value",
+			"desc": "实际值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.VAR.CONTROL.Input$$4139f029a75b458f95953dbdb67aa9f2_value_showValue",
+			"key": "VAR.CONTROL.VAR.CONTROL.Input$$4139f029a75b458f95953dbdb67aa9f2_value_showValue",
+			"controlKey": "Input$$4139f029a75b458f95953dbdb67aa9f2",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Input",
+			"attr": "showValue",
+			"desc": "显示值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.Input$$c0f1ca03560c418e8cf0587143f2c666_value",
+			"key": "VAR.CONTROL.Input$$c0f1ca03560c418e8cf0587143f2c666_value",
+			"controlKey": "Input$$c0f1ca03560c418e8cf0587143f2c666",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Input",
+			"attr": "value",
+			"desc": "实际值"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.VAR.CONTROL.Input$$c0f1ca03560c418e8cf0587143f2c666_value_showValue",
+			"key": "VAR.CONTROL.VAR.CONTROL.Input$$c0f1ca03560c418e8cf0587143f2c666_value_showValue",
+			"controlKey": "Input$$c0f1ca03560c418e8cf0587143f2c666",
+			"uiPid": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+			"type": "Input",
+			"attr": "showValue",
+			"desc": "显示值"
+		},
+		{
+			"$$rowKey": "Button$$53a892eaf22744fbb8edcf2ddcf7868e",
+			"key": "Button$$53a892eaf22744fbb8edcf2ddcf7868e",
+			"controlKey": "Button$$53a892eaf22744fbb8edcf2ddcf7868e",
+			"type": "Button",
+			"attr": null,
+			"desc": null
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.Table$$bac13a4d4cc343c5a797fbd7910944bf_pagination.page",
+			"key": "VAR.CONTROL.Table$$bac13a4d4cc343c5a797fbd7910944bf_pagination.page",
+			"controlKey": "Table$$bac13a4d4cc343c5a797fbd7910944bf",
+			"type": "Table",
+			"attr": "pagination.page",
+			"desc": "页码"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.VAR.CONTROL.Table$$bac13a4d4cc343c5a797fbd7910944bf_pagination.page_pagination.pageSize",
+			"key": "VAR.CONTROL.VAR.CONTROL.Table$$bac13a4d4cc343c5a797fbd7910944bf_pagination.page_pagination.pageSize",
+			"controlKey": "Table$$bac13a4d4cc343c5a797fbd7910944bf",
+			"type": "Table",
+			"attr": "pagination.pageSize",
+			"desc": "每页显示数量"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.VAR.CONTROL.VAR.CONTROL.Table$$bac13a4d4cc343c5a797fbd7910944bf_pagination.page_pagination.pageSize_rowSelection.checkedKeys",
+			"key": "VAR.CONTROL.VAR.CONTROL.VAR.CONTROL.Table$$bac13a4d4cc343c5a797fbd7910944bf_pagination.page_pagination.pageSize_rowSelection.checkedKeys",
+			"controlKey": "Table$$bac13a4d4cc343c5a797fbd7910944bf",
+			"type": "Table",
+			"attr": "rowSelection.checkedKeys",
+			"desc": "选中行的keys，类型 STRING_ARRAY"
+		},
+		{
+			"$$rowKey": "VAR.CONTROL.VAR.CONTROL.VAR.CONTROL.VAR.CONTROL.Table$$bac13a4d4cc343c5a797fbd7910944bf_pagination.page_pagination.pageSize_rowSelection.checkedKeys_rowSelection.checkedRows",
+			"key": "VAR.CONTROL.VAR.CONTROL.VAR.CONTROL.VAR.CONTROL.Table$$bac13a4d4cc343c5a797fbd7910944bf_pagination.page_pagination.pageSize_rowSelection.checkedKeys_rowSelection.checkedRows",
+			"controlKey": "Table$$bac13a4d4cc343c5a797fbd7910944bf",
+			"type": "Table",
+			"attr": "rowSelection.checkedRows",
+			"desc": "选中行的数据，类型 OBJECT_ARRAY"
+		}
+	],
+	"functionConfig": [],
+	"componentConfig": [],
+	"varConfig": [],
+	"layout": {
+		"type": "[[Row]]",
+		"props": {},
+		"children": [
+			{
+				"type": "[[Col]]",
+				"props": {
+					"style": {
+						"padding": "0px 5px",
+						"width": "100%"
+					}
+				},
+				"children": [
+					{
+						"type": "[[Form]]",
+						"props": {
+							"formConfig": {
+								"columns": "2",
+								"layout": "horizontal",
+								"labelCol": {
+									"span": 8
+								},
+								"wrapperCol": {
+									"span": 14
+								}
+							},
+							"formItemConfig": [
+								{
+									"field": "fushubiao1_create_user_id",
+									"labelProps": {
+										"label": "创建人主键",
+										"required": true
+									},
+									"controlProps": {
+										"type": "[[Input]]",
+										"props": {
+											"controlKey": "Input$$3a582a894fc048239c7d5a8c16587049",
+											"style": {
+												"width": "100%"
+											},
+											"type": "number"
+										}
+									}
+								},
+								{
+									"field": "fushubiao1_last_update_user_name",
+									"labelProps": {
+										"label": "最后修改人名称"
+									},
+									"controlProps": {
+										"type": "[[Input]]",
+										"props": {
+											"controlKey": "Input$$a59ef55690054b8186050ce1fbef992a",
+											"style": {
+												"width": "100%"
+											}
+										}
+									}
+								},
+								{
+									"field": "zhuming",
+									"labelProps": {
+										"label": "主名"
+									},
+									"controlProps": {
+										"type": "[[Input]]",
+										"props": {
+											"controlKey": "Input$$e99b6bb356c64e4cb32a93d51298ee62",
+											"style": {
+												"width": "100%"
+											}
+										}
+									}
+								},
+								{
+									"field": "fushubiao1_data_version",
+									"labelProps": {
+										"label": "数据版本",
+										"help": "",
+										"required": true
+									},
+									"controlProps": {
+										"type": "[[Input]]",
+										"props": {
+											"controlKey": "Input$$3aedfcda19284b4497831b5ef6da7007",
+											"style": {
+												"width": "100%"
+											}
+										}
+									}
+								},
+								{
+									"field": "fushubiao1_fushu1mingcheng",
+									"labelProps": {
+										"label": "附属1名称"
+									},
+									"controlProps": {
+										"type": "[[Input]]",
+										"props": {
+											"controlKey": "Input$$b2bc7c2c419a488a959f603c082e1d74",
+											"style": {
+												"width": "100%"
+											}
+										}
+									}
+								},
+								{
+									"field": "fushubiao1_last_update_time",
+									"labelProps": {
+										"label": "最后修改时间",
+										"required": true
+									},
+									"controlProps": {
+										"type": "[[DateTime]]",
+										"props": {
+											"controlKey": "DateTime$$dc2753ce31054cfba32a0cf1f970da49",
+											"style": {
+												"width": "100%"
+											}
+										}
+									}
+								},
+								{
+									"field": "fushubiao1_last_update_user_id",
+									"labelProps": {
+										"label": "最后修改人主键",
+										"required": true
+									},
+									"controlProps": {
+										"type": "[[Input]]",
+										"props": {
+											"controlKey": "Input$$2951da66f7e5416184af9608baaf87c1",
+											"style": {
+												"width": "100%"
+											},
+											"type": "number"
+										}
+									}
+								},
+								{
+									"field": "fushubiao1_id",
+									"labelProps": {
+										"label": "主键",
+										"required": true
+									},
+									"controlProps": {
+										"type": "[[Input]]",
+										"props": {
+											"controlKey": "Input$$868669b6e233468788fa6f78d2b40d21",
+											"style": {
+												"width": "100%"
+											},
+											"type": "number"
+										}
+									}
+								},
+								{
+									"field": "fushubiao1_fid",
+									"labelProps": {
+										"label": "外键",
+										"required": true
+									},
+									"controlProps": {
+										"type": "[[Input]]",
+										"props": {
+											"controlKey": "Input$$51508442aa6a426d988bc8090e8c6922",
+											"style": {
+												"width": "100%"
+											},
+											"type": "number"
+										}
+									}
+								},
+								{
+									"field": "fushubiao1_create_time",
+									"labelProps": {
+										"label": "创建时间",
+										"required": true
+									},
+									"controlProps": {
+										"type": "[[DateTime]]",
+										"props": {
+											"controlKey": "DateTime$$0a9221b9ab9d4d34abdaad12a44660c7",
+											"style": {
+												"width": "100%"
+											}
+										}
+									}
+								},
+								{
+									"field": "fushubiao1_create_user_name",
+									"labelProps": {
+										"label": "创建人名称"
+									},
+									"controlProps": {
+										"type": "[[Input]]",
+										"props": {
+											"controlKey": "Input$$4139f029a75b458f95953dbdb67aa9f2",
+											"style": {
+												"width": "100%"
+											}
+										}
+									}
+								},
+								{
+									"field": "fushubiao1_sequence",
+									"labelProps": {
+										"label": "排序序号",
+										"required": true
+									},
+									"controlProps": {
+										"type": "[[Input]]",
+										"props": {
+											"controlKey": "Input$$c0f1ca03560c418e8cf0587143f2c666",
+											"style": {
+												"width": "100%"
+											},
+											"type": "number"
+										}
+									}
+								}
+							],
+							"controlKey": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+							"style": {
+								"paddingTop": "10px"
+							}
+						}
+					}
+				]
+			},
+			{
+				"type": "[[Col]]",
+				"props": {
+					"style": {
+						"padding": "0px 5px",
+						"width": "100%"
+					}
+				},
+				"children": [
+					{
+						"type": "[[Button]]",
+						"props": {
+							"controlKey": "Button$$53a892eaf22744fbb8edcf2ddcf7868e",
+							"text": "提交",
+							"type": "primary",
+							"style": {
+								"display": "block",
+								"textAlign": "center"
+							}
+						}
+					}
+				]
+			},
+			{
+				"type": "[[Col]]",
+				"props": {
+					"style": {
+						"padding": "0px 5px",
+						"width": "100%"
+					}
+				},
+				"children": [
+					{
+						"type": "[[Table]]",
+						"props": {
+							"controlKey": "Table$$bac13a4d4cc343c5a797fbd7910944bf",
+							"columns": [
+								{
+									"title": "序号",
+									"dataIndex": "",
+									"show": true,
+									"sorter": false,
+									"width": "50px",
+									"fixed": null
+								},
+								{
+									"title": "角色名称",
+									"dataIndex": "name",
+									"show": false
+								},
+								{
+									"title": "创建人主键",
+									"dataIndex": "create_user_id",
+									"show": false
+								},
+								{
+									"title": "备注",
+									"dataIndex": "remark",
+									"show": true
+								},
+								{
+									"title": "创建时间",
+									"dataIndex": "create_time",
+									"show": true
+								},
+								{
+									"title": "字段名称",
+									"dataIndex": "field_code$1",
+									"show": true,
+									"sorter": false,
+									"width": null,
+									"fixed": null
+								}
+							],
+							"dataSource": [],
+							"bordered": false,
+							"pagination": {
+								"show": true
+							},
+							"httpConfig": {
+								"{{init}}": "Function$$3fa1233889c54d46b778190b9592adc6"
+							},
+							"header": {
+								"show": true,
+								"onlySearch": false,
+								"title": {
+									"span": 21,
+									"content": ""
+								},
+								"searchInput": {
+									"span": 0,
+									"placeholder": ""
+								},
+								"headerButton": {
+									"span": "2",
+									"button": [
+										{
+											"text": "新建",
+											"show": true,
+											"btnCode": "CREATE_BUTTON",
+											"$$rowKey": "a0ebd2bcd0b24bd0910eb50d697029f5"
+										},
+										{
+											"text": "导入",
+											"show": false,
+											"btnCode": "IMPORT_BUTTON",
+											"$$rowKey": "74929f04493d44bd86911e81ceed1996"
+										},
+										{
+											"text": "导出",
+											"show": false,
+											"btnCode": "EXPORT_BUTTON",
+											"$$rowKey": "f9f177f46d00497f86ad664f43e485b4"
+										},
+										{
+											"text": "批量删除",
+											"show": false,
+											"btnCode": "HEADER_DELETE_BUTTON",
+											"$$rowKey": "2058976ee1a946519539515dd41f4351"
+										}
+									]
+								},
+								"filterSetting": {
+									"span": 0
+								},
+								"customerColumns": {
+									"span": 1
+								},
+								"refreshButton": {
+									"span": 0
+								},
+								"fullscreenButton": {
+									"span": 0
+								}
+							},
+							"buttonConfig": {
+								"rowButton": [
+									{
+										"text": "删除",
+										"color": "#1890ff"
+									},
+									{
+										"text": "修改",
+										"color": "#1890ff"
+									},
+									{
+										"text": "详情",
+										"color": "#1890ff"
+									}
+								],
+								"align": "left",
+								"width": "140px"
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

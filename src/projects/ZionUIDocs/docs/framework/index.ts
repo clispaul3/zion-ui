@@ -1,0 +1,1 @@
+export { CoreIdea } from "./CoreIdea"

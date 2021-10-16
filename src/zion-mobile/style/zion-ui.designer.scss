@@ -1,0 +1,33 @@
+.zion-ui-designer-preview-dashboard-com-container {
+  position: relative;
+  border: 1px solid #fff;
+  .close-icon,
+  .edit-icon {
+    padding: 2px;
+    position: absolute;
+    display: none;
+    border-radius: 50%;
+    top: 0px;
+    left: -5px;
+    font-size: 14px;
+    color: #ff4d4f;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .edit-icon {
+    color: #0d8df9;
+    top: 20px;
+	}
+}
+.zion-ui-designer-preview-dashboard-com-container:hover {
+	cursor: move;
+  border: 5px solid rgba(44, 144, 255, 0.1) !important;
+  .close-icon,
+  .edit-icon {
+  	display: block;
+  	position: absolute;
+  	left: -15px;
+  }
+  .close-icon {
+  	top: -5px;
+  }
+}

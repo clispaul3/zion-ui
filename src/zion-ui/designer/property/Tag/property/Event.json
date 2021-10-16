@@ -1,0 +1,30 @@
+{
+	"type": "[[Form]]",
+	"props": {
+		"controlKey": "{{controlKey}}",
+		"formConfig": {
+			"layout": "vertical",
+			"columns": 1,
+			"labelCol": {
+				"span": 24
+			}
+		},
+		"formItemConfig": [
+			{
+				"field": "onClose",
+				"labelProps": {
+					"label": "删除事件"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"onClick": "{{Service.onClose_onClick}}",
+						"allowSpace": true,
+						"type": "input",
+						"placeholder": "请选择"
+					}
+				}
+			}
+		]
+	}
+}

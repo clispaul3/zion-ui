@@ -1,0 +1,91 @@
+{
+	"pageId": "$$pageId",
+	"controlList": [],
+	"functionConfig": [],
+	"componentConfig": [],
+	"varConfig": [],
+	"layout": {
+		"type": "[[Row]]",
+		"props": {},
+		"children": [
+			{
+				"type": "[[Col]]",
+				"props": {
+					"style": {
+						"padding": "0px 5px",
+						"width": "100%"
+					}
+				},
+				"children": [
+					{
+						"type": "[[Table]]",
+						"props": {
+							"controlKey": "Table$$7bf950209bde4322ac4f4363896273bf",
+							"columns": [
+								{
+									"title": "角色名称",
+									"dataIndex": "name_2",
+									"show": true
+								},
+								{
+									"title": "备注",
+									"dataIndex": "remark_1",
+									"show": true
+								},
+								{
+									"title": "创建人",
+									"dataIndex": "create_user_name_4",
+									"show": true,
+									"sorter": false
+								},
+								{
+									"title": "创建时间",
+									"dataIndex": "create_time_3",
+									"show": true,
+									"sorter": false
+								},
+								{
+									"title": "主键",
+									"dataIndex": "id_5",
+									"show": false
+								}
+							],
+							"dataSource": [],
+							"bordered": false,
+							"pagination": {
+								"show": true
+							},
+							"rowSelection": {
+								"show": true,
+								"mode": "checkbox"
+							},
+							"buttonConfig": {
+								"rowButton": [
+									{
+										"text": "修改",
+										"color": "#1890ff"
+									},
+									{
+										"text": "详情",
+										"color": "#1890ff"
+									},
+									{
+										"text": "删除",
+										"color": "#1890ff"
+									}
+								],
+								"align": "left",
+								"width": "140px"
+							},
+							"footer": {
+								"show": true,
+								"key": "id_5",
+								"label": "name_2"
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,63 @@
+{
+	"type": "[[Form]]",
+	"props": {
+		"controlKey": "{{controlKey}}",
+		"formConfig": {
+			"layout": "vertical",
+			"columns": 1,
+			"labelCol": {
+				"span": 24
+			}
+		},
+		"formItemConfig": [
+			{
+				"field": "value",
+				"labelProps": {
+					"label": "实际值"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"value": 60,
+						"style": {
+							"width": "100%"
+						},
+						"onChange": "{{Service.value_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "max",
+				"labelProps": {
+					"label": "最大值"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"style": {
+							"width": "100%"
+						},
+						"onChange": "{{Service.max_onChange}}",
+						"type": "number"
+					}
+				}
+			},
+			{
+				"field": "min",
+				"labelProps": {
+					"label": "最小值"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"style": {
+							"width": "100%"
+						},
+						"onChange": "{{Service.min_onChange}}",
+						"type": "number"
+					}
+				}
+			}
+		]
+	}
+}

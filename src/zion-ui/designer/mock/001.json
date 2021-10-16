@@ -1,0 +1,241 @@
+{
+  "pageId": "$$pageId",
+  "controlList": [
+    {
+      "controlKey": "Table$$bac13a4d4cc343c5a797fbd7910944bf",
+      "key": "Table",
+      "label": "表格",
+      "pid": null,
+      "title": "表格"
+    },
+    {
+      "controlKey": "Form$$f17376e4cff3439f9fb95e9543f2a698",
+      "key": "Form",
+      "label": "表单",
+      "pid": "QueryForm$$de23cf440ac94f22927fa8c21269f18d",
+      "title": "用户列表查询表单"
+    },
+    {
+      "controlKey": "QueryForm$$de23cf440ac94f22927fa8c21269f18d",
+      "key": "QueryForm",
+      "label": "查询表单",
+      "pid": null
+    },
+    {
+      "key": "Input",
+      "label": "角色名称",
+      "controlKey": "Input$$a0b8918b-dbe5-4585-b175-f37722615a9c",
+      "pid": "Form$$f17376e4cff3439f9fb95e9543f2a698"
+    }
+  ],
+  "functionConfig": [
+    {
+      "$$rowKey": "6556db36776a41a898186febd0912297",
+      "controlKey": "Function$$3fa1233889c54d46b778190b9592adc6",
+      "title": "函数名称",
+      "type": "DataApi",
+      "config": {
+        "$$_requestUrl": "1343519969148809216_list_1620293772563"
+      }
+    }
+  ],
+  "componentConfig": [
+    {
+      "$$rowKey": "9b6c935a41394ca083f86680ac20daa0",
+      "controlKey": "Component$938",
+      "title": "组件名称",
+      "config": null
+    }
+  ],
+  "varConfig": [],
+  "layout": {
+    "type": "[[Row]]",
+    "props": {},
+    "children": [
+      {
+        "type": "[[Col]]",
+        "props": {
+          "style": {
+            "padding": "0px 5px",
+            "width": "100%"
+          }
+        },
+        "children": [
+          {
+            "type": "[[QueryForm]]",
+            "props": {
+              "controlKey": "QueryForm$$de23cf440ac94f22927fa8c21269f18d",
+              "formProps": {
+                "formConfig": {
+                  "columns": "1",
+                  "layout": "horizontal",
+                  "labelCol": {
+                    "span": 4
+                  },
+                  "wrapperCol": {
+                    "span": 18
+                  }
+                },
+                "formItemConfig": [
+                  {
+                    "field": "name",
+                    "labelProps": {
+                      "label": "角色名称",
+                      "help": "",
+                      "required": false
+                    },
+                    "controlProps": {
+                      "type": "[[Input]]",
+                      "props": {
+                        "controlKey": "Input$$a0b8918b-dbe5-4585-b175-f37722615a9c",
+                        "style": {
+                          "width": "100%"
+                        },
+                        "value": "18"
+                      }
+                    }
+                  }
+                ],
+                "controlKey": "Form$$f17376e4cff3439f9fb95e9543f2a698"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "[[Col]]",
+        "props": {
+          "style": {
+            "padding": "0px 5px",
+            "width": "100%"
+          }
+        },
+        "children": [
+          {
+            "type": "[[Table]]",
+            "props": {
+              "controlKey": "Table$$bac13a4d4cc343c5a797fbd7910944bf",
+              "columns": [
+                {
+                  "title": "序号",
+                  "dataIndex": "",
+                  "show": true,
+                  "sorter": false,
+                  "width": "50px",
+                  "fixed": null
+                },
+                {
+                  "title": "角色名称",
+                  "dataIndex": "name",
+                  "show": true
+                },
+                {
+                  "title": "创建人主键",
+                  "dataIndex": "create_user_id",
+                  "show": true
+                },
+                {
+                  "title": "备注",
+                  "dataIndex": "remark",
+                  "show": true
+                },
+                {
+                  "title": "创建时间",
+                  "dataIndex": "create_time",
+                  "show": true
+                },
+                {
+                  "title": "字段名称",
+                  "dataIndex": "field_code$1",
+                  "show": true,
+                  "sorter": false,
+                  "width": null,
+                  "fixed": null
+                }
+              ],
+              "dataSource": [],
+              "bordered": false,
+              "pagination": {
+                "show": true
+              },
+              "httpConfig": {
+                "{{init}}": "Function$$3fa1233889c54d46b778190b9592adc6"
+              },
+              "header": {
+                "show": true,
+                "onlySearch": false,
+                "title": {
+                  "span": 21,
+                  "content": ""
+                },
+                "searchInput": {
+                  "span": 0,
+                  "placeholder": ""
+                },
+                "headerButton": {
+                  "span": "2",
+                  "button": [
+                    {
+                      "text": "新建",
+                      "show": true,
+                      "btnCode": "CREATE_BUTTON",
+                      "$$rowKey": "a0ebd2bcd0b24bd0910eb50d697029f5"
+                    },
+                    {
+                      "text": "导入",
+                      "show": false,
+                      "btnCode": "IMPORT_BUTTON",
+                      "$$rowKey": "74929f04493d44bd86911e81ceed1996"
+                    },
+                    {
+                      "text": "导出",
+                      "show": false,
+                      "btnCode": "EXPORT_BUTTON",
+                      "$$rowKey": "f9f177f46d00497f86ad664f43e485b4"
+                    },
+                    {
+                      "text": "批量删除",
+                      "show": false,
+                      "btnCode": "HEADER_DELETE_BUTTON",
+                      "$$rowKey": "2058976ee1a946519539515dd41f4351"
+                    }
+                  ]
+                },
+                "filterSetting": {
+                  "span": 0
+                },
+                "customerColumns": {
+                  "span": 1
+                },
+                "refreshButton": {
+                  "span": 0
+                },
+                "fullscreenButton": {
+                  "span": 0
+                }
+              },
+              "buttonConfig": {
+                "rowButton": [
+                  {
+                    "text": "删除",
+                    "color": "#1890ff"
+                  },
+                  {
+                    "text": "修改",
+                    "color": "#1890ff"
+                  },
+                  {
+                    "text": "详情",
+                    "color": "#1890ff"
+                  }
+                ],
+                "align": "left",
+                "width": "140px"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

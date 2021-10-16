@@ -1,0 +1,6 @@
+{
+	"private": false,
+	"name": "zion-ui",
+	"version": "2.0.0",
+	"main": "./index.ts"
+}

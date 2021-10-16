@@ -1,0 +1,1951 @@
+{
+	"content": [
+		{
+			"label": "页面",
+			"widgetRef": "PageContainer",
+			"deletable": false,
+			"dragable": false,
+			"isContainer": true,
+			"eventAttr": [
+				{
+					"alias": "加载事件",
+					"type": "onPageLoad"
+				},
+				{
+					"alias": "销毁事件(未实现)",
+					"type": "onPageDestroy"
+				},
+				{
+					"alias": "窗口大小调整事件(未实现)",
+					"type": "onPageResize"
+				}
+			],
+			"reloadEvents": [
+				"onPageLoad"
+			],
+			"varAttr": [],
+			"id": "PC",
+			"_state": "active",
+			"propState": {
+				"eventRef": {
+					"onPageLoad": [
+						"event_PC_onPageLoad_zZtHpEQD"
+					]
+				},
+				"widgetCode": "PageContainer0"
+			},
+			"body": [
+				{
+					"label": "文本框",
+					"icon": "MdTitle",
+					"widgetRef": "FormInput",
+					"group": "formInput",
+					"eventAttr": [
+						{
+							"alias": "值改变事件",
+							"type": "onChange"
+						},
+						{
+							"alias": "单击事件",
+							"type": "onClick"
+						},
+						{
+							"alias": "获取焦点事件",
+							"type": "onFocus"
+						},
+						{
+							"alias": "失去焦点事件",
+							"type": "onBlur"
+						}
+					],
+					"varAttr": [
+						{
+							"alias": "实际值",
+							"attr": "realVal",
+							"type": "string",
+							"editable": true
+						},
+						{
+							"alias": "显示值",
+							"attr": "showVal",
+							"type": "string",
+							"editable": true
+						}
+					],
+					"id": "mrioeriW",
+					"_state": "active",
+					"propState": {
+						"title": "输入",
+						"show": {
+							"type": "visible"
+						},
+						"requiredProps": {
+							"type": false
+						},
+						"style": {
+							"backgroundColor": "transparent",
+							"border": "1px solid #D6D7DA"
+						},
+						"showValColor": "#272727",
+						"readOnlyProps": {
+							"type": "exp",
+							"expID": "exp_appoilWo"
+						},
+						"widgetCode": "FormInput$2"
+					}
+				},
+				{
+					"label": "表格",
+					"icon": "CgViewList",
+					"widgetRef": "NormalTable",
+					"group": "listDisplay",
+					"eventAttr": [
+						{
+							"alias": "查询",
+							"type": "onQuery"
+						},
+						{
+							"alias": "重置查询",
+							"type": "onSearchAreaReset",
+							"unEditable": true
+						},
+						{
+							"alias": "重置行点击",
+							"type": "onRowClickReset",
+							"unEditable": true
+						},
+						{
+							"alias": "选中行",
+							"type": "onRowSelect"
+						},
+						{
+							"alias": "双击行",
+							"type": "onRowDbClick"
+						},
+						{
+							"alias": "单击行",
+							"type": "onRowClick"
+						},
+						{
+							"alias": "行失焦",
+							"type": "onRowBlur"
+						},
+						{
+							"alias": "更新选中数据",
+							"type": "onUpdateSelectedRows",
+							"unEditable": true
+						},
+						{
+							"alias": "去除选中行",
+							"type": "onSelectedRowDelete",
+							"unEditable": true
+						}
+					],
+					"reloadEvents": [
+						"onQuery"
+					],
+					"varAttr": [
+						{
+							"alias": "当前页数",
+							"attr": "current",
+							"type": "number",
+							"editable": false
+						},
+						{
+							"alias": "每页显示行数",
+							"attr": "pageSize",
+							"type": "number",
+							"editable": false
+						},
+						{
+							"alias": "数据总数",
+							"attr": "total",
+							"type": "number",
+							"editable": false
+						},
+						{
+							"alias": "选中行数据列表",
+							"attr": "selectedRows",
+							"rules": [
+								{
+									"check": "(handlerCtx, effectState)=>{const value=handlerCtx.getState(effectState); if(value?.length===1)return;return '请选择一行表格数据'}"
+								}
+							],
+							"type": "array",
+							"method": "selectedRows",
+							"editable": true
+						},
+						{
+							"alias": "选中行唯一标识列表",
+							"attr": "selectedRowKeys",
+							"rules": [
+								{
+									"check": "(handlerCtx, effectState)=>{const value=handlerCtx.getState(effectState); if(value?.length===1)return;return '请选择一行表格数据'}"
+								}
+							],
+							"type": "array",
+							"editable": true
+						},
+						{
+							"alias": "最新选中行数据",
+							"attr": "lastSelectedRow",
+							"type": "object",
+							"method": "lastSelectedRow",
+							"editable": true
+						},
+						{
+							"alias": "默认分页数据",
+							"attr": "pagination",
+							"type": "object",
+							"editable": false
+						},
+						{
+							"alias": "当前操作是否为行操作",
+							"attr": "rowClicked",
+							"type": "boolean",
+							"editable": false,
+							"unReadable": true
+						},
+						{
+							"alias": "已排序字段列表",
+							"attr": "usedSortFields",
+							"type": "array",
+							"editable": false,
+							"unReadable": true
+						}
+					],
+					"id": "papmleaa",
+					"_state": "active",
+					"propState": {
+						"title": "表格",
+						"titleAlign": "left",
+						"pagination": {
+							"pageSize": 10,
+							"current": 1
+						},
+						"showOrderColumn": false,
+						"wordWrap": false,
+						"rowSelection": {
+							"type": "radio",
+							"checkedStyle": "activeRow"
+						},
+						"queryType": {
+							"typical": {
+								"queryStyle": "asForm",
+								"columnNum": 3
+							}
+						},
+						"show": {
+							"type": "visible"
+						},
+						"headerBtns": [
+							{
+								"widgetEntity": {
+									"widgetRef": "FormButton",
+									"icon": "CgUsbC",
+									"label": "按钮",
+									"group": "actionControl",
+									"eventAttr": [
+										{
+											"alias": "单击事件",
+											"type": "onClick"
+										},
+										{
+											"alias": "双击事件",
+											"type": "onDbClick"
+										},
+										{
+											"alias": "鼠标移入事件",
+											"type": "onMouseIn"
+										},
+										{
+											"alias": "鼠标移出事件",
+											"type": "onMouseOut"
+										}
+									],
+									"id": "tdlmWfrd",
+									"_state": "active",
+									"propState": {
+										"title": "新增",
+										"show": {
+											"type": "visible"
+										},
+										"disabledProps": {
+											"type": false
+										},
+										"iconType": "",
+										"size": "middle"
+									}
+								},
+								"btnProps": {},
+								"btnType": "create"
+							}
+						],
+						"inlineBtns": [
+							{
+								"widgetEntity": {
+									"widgetRef": "FormButton",
+									"icon": "CgUsbC",
+									"label": "按钮",
+									"group": "actionControl",
+									"eventAttr": [
+										{
+											"alias": "单击事件",
+											"type": "onClick"
+										},
+										{
+											"alias": "双击事件",
+											"type": "onDbClick"
+										},
+										{
+											"alias": "鼠标移入事件",
+											"type": "onMouseIn"
+										},
+										{
+											"alias": "鼠标移出事件",
+											"type": "onMouseOut"
+										}
+									],
+									"id": "mtiWdtit",
+									"_state": "active",
+									"propState": {
+										"title": "查看",
+										"show": {
+											"type": "visible"
+										},
+										"disabledProps": {
+											"type": false
+										},
+										"iconType": "",
+										"size": "small"
+									}
+								},
+								"btnProps": {},
+								"btnType": "detail"
+							},
+							{
+								"widgetEntity": {
+									"widgetRef": "FormButton",
+									"icon": "CgUsbC",
+									"label": "按钮",
+									"group": "actionControl",
+									"eventAttr": [
+										{
+											"alias": "单击事件",
+											"type": "onClick"
+										},
+										{
+											"alias": "双击事件",
+											"type": "onDbClick"
+										},
+										{
+											"alias": "鼠标移入事件",
+											"type": "onMouseIn"
+										},
+										{
+											"alias": "鼠标移出事件",
+											"type": "onMouseOut"
+										}
+									],
+									"id": "rratgpdi",
+									"_state": "active",
+									"propState": {
+										"title": "修改",
+										"show": {
+											"type": "visible"
+										},
+										"disabledProps": {
+											"type": false
+										},
+										"iconType": "",
+										"size": "small"
+									}
+								},
+								"btnProps": {},
+								"btnType": "update"
+							},
+							{
+								"widgetEntity": {
+									"widgetRef": "FormButton",
+									"icon": "CgUsbC",
+									"label": "按钮",
+									"group": "actionControl",
+									"eventAttr": [
+										{
+											"alias": "单击事件",
+											"type": "onClick"
+										},
+										{
+											"alias": "双击事件",
+											"type": "onDbClick"
+										},
+										{
+											"alias": "鼠标移入事件",
+											"type": "onMouseIn"
+										},
+										{
+											"alias": "鼠标移出事件",
+											"type": "onMouseOut"
+										}
+									],
+									"id": "trottrop",
+									"_state": "active",
+									"propState": {
+										"title": "删除",
+										"show": {
+											"type": "visible"
+										},
+										"disabledProps": {
+											"type": false
+										},
+										"iconType": "",
+										"size": "small"
+									}
+								},
+								"btnProps": {},
+								"btnType": "delete"
+							}
+						],
+						"widgetCode": "NormalTable$1",
+						"searchColumns": [
+							{
+								"widgetEntity": {
+									"label": "文本框",
+									"icon": "MdTitle",
+									"widgetRef": "FormInput",
+									"group": "formInput",
+									"eventAttr": [
+										{
+											"alias": "值改变事件",
+											"type": "onChange"
+										},
+										{
+											"alias": "单击事件",
+											"type": "onClick"
+										},
+										{
+											"alias": "获取焦点事件",
+											"type": "onFocus"
+										},
+										{
+											"alias": "失去焦点事件",
+											"type": "onBlur"
+										}
+									],
+									"varAttr": [
+										{
+											"alias": "实际值",
+											"attr": "realVal",
+											"type": "string",
+											"editable": true
+										},
+										{
+											"alias": "显示值",
+											"attr": "showVal",
+											"type": "string",
+											"editable": true
+										}
+									],
+									"id": "eomfmmle",
+									"_state": "active",
+									"propState": {
+										"title": "名称",
+										"show": {
+											"type": "visible"
+										},
+										"requiredProps": {
+											"type": false
+										},
+										"style": {
+											"backgroundColor": "transparent",
+											"border": "1px solid #D6D7DA"
+										},
+										"showValColor": "#272727"
+									},
+									"columnName": "name"
+								},
+								"columnProps": {
+									"show": true,
+									"span": {
+										"xs": 24,
+										"sm": 12,
+										"md": 8,
+										"lg": 6
+									},
+									"blurSearch": false,
+									"packUp": true,
+									"title": "名称"
+								},
+								"columnName": "name",
+								"_type": "STRING"
+							},
+							{
+								"widgetEntity": {
+									"label": "数字框",
+									"icon": "AiOutlineFieldBinary",
+									"widgetRef": "FormInputNumber",
+									"group": "formInput",
+									"eventAttr": [
+										{
+											"alias": "值改变事件",
+											"type": "onChange"
+										},
+										{
+											"alias": "失去焦点事件",
+											"type": "onBlur"
+										},
+										{
+											"alias": "点击事件",
+											"type": "onClick"
+										}
+									],
+									"varAttr": [
+										{
+											"alias": "实际值",
+											"attr": "realVal",
+											"type": "number",
+											"editable": true
+										}
+									],
+									"id": "ldpgWiip",
+									"_state": "active",
+									"propState": {
+										"title": "父节点",
+										"requiredProps": {
+											"type": false
+										},
+										"show": {
+											"type": "visible"
+										},
+										"style": {
+											"backgroundColor": "#EAEBEE",
+											"border": "1px solid #D6D7DA"
+										},
+										"showValColor": "#272727"
+									},
+									"columnName": "pid"
+								},
+								"columnProps": {
+									"show": true,
+									"span": {
+										"xs": 24,
+										"sm": 12,
+										"md": 8,
+										"lg": 6
+									},
+									"blurSearch": false,
+									"packUp": true,
+									"title": "父节点"
+								},
+								"columnName": "pid",
+								"_type": "STRING_NUMBER"
+							}
+						],
+						"columns": [
+							{
+								"widgetEntity": {
+									"label": "文本框",
+									"icon": "MdTitle",
+									"widgetRef": "FormInput",
+									"group": "formInput",
+									"eventAttr": [
+										{
+											"alias": "值改变事件",
+											"type": "onChange"
+										},
+										{
+											"alias": "单击事件",
+											"type": "onClick"
+										},
+										{
+											"alias": "获取焦点事件",
+											"type": "onFocus"
+										},
+										{
+											"alias": "失去焦点事件",
+											"type": "onBlur"
+										}
+									],
+									"varAttr": [
+										{
+											"alias": "实际值",
+											"attr": "realVal",
+											"type": "string",
+											"editable": true
+										},
+										{
+											"alias": "显示值",
+											"attr": "showVal",
+											"type": "string",
+											"editable": true
+										}
+									],
+									"id": "WpiralfW",
+									"_state": "active",
+									"propState": {
+										"title": "名称",
+										"show": {
+											"type": "visible"
+										},
+										"requiredProps": {
+											"type": false
+										},
+										"style": {
+											"backgroundColor": "transparent",
+											"border": "1px solid #D6D7DA"
+										},
+										"showValColor": "#272727"
+									},
+									"columnName": "name"
+								},
+								"columnProps": {
+									"dataIndex": "name",
+									"width": "150px",
+									"align": "left",
+									"editable": false,
+									"fieldShowType": "realVal",
+									"show": true
+								},
+								"columnName": "name",
+								"_type": "string"
+							},
+							{
+								"widgetEntity": {
+									"label": "文本框",
+									"icon": "MdTitle",
+									"widgetRef": "FormInput",
+									"group": "formInput",
+									"eventAttr": [
+										{
+											"alias": "值改变事件",
+											"type": "onChange"
+										},
+										{
+											"alias": "单击事件",
+											"type": "onClick"
+										},
+										{
+											"alias": "获取焦点事件",
+											"type": "onFocus"
+										},
+										{
+											"alias": "失去焦点事件",
+											"type": "onBlur"
+										}
+									],
+									"varAttr": [
+										{
+											"alias": "实际值",
+											"attr": "realVal",
+											"type": "string",
+											"editable": true
+										},
+										{
+											"alias": "显示值",
+											"attr": "showVal",
+											"type": "string",
+											"editable": true
+										}
+									],
+									"id": "teWedmfi",
+									"_state": "active",
+									"propState": {
+										"title": "层级",
+										"show": {
+											"type": "visible"
+										},
+										"requiredProps": {
+											"type": false
+										},
+										"style": {
+											"backgroundColor": "transparent",
+											"border": "1px solid #D6D7DA"
+										},
+										"showValColor": "#272727"
+									},
+									"columnName": "level"
+								},
+								"columnProps": {
+									"dataIndex": "level",
+									"width": "150px",
+									"align": "left",
+									"editable": false,
+									"fieldShowType": "realVal",
+									"show": true
+								},
+								"columnName": "level",
+								"_type": "string"
+							},
+							{
+								"widgetEntity": {
+									"label": "文本框",
+									"icon": "MdTitle",
+									"widgetRef": "FormInput",
+									"group": "formInput",
+									"eventAttr": [
+										{
+											"alias": "值改变事件",
+											"type": "onChange"
+										},
+										{
+											"alias": "单击事件",
+											"type": "onClick"
+										},
+										{
+											"alias": "获取焦点事件",
+											"type": "onFocus"
+										},
+										{
+											"alias": "失去焦点事件",
+											"type": "onBlur"
+										}
+									],
+									"varAttr": [
+										{
+											"alias": "实际值",
+											"attr": "realVal",
+											"type": "string",
+											"editable": true
+										},
+										{
+											"alias": "显示值",
+											"attr": "showVal",
+											"type": "string",
+											"editable": true
+										}
+									],
+									"id": "rdiliWtr",
+									"_state": "active",
+									"propState": {
+										"title": "父节点",
+										"show": {
+											"type": "visible"
+										},
+										"requiredProps": {
+											"type": false
+										},
+										"style": {
+											"backgroundColor": "transparent",
+											"border": "1px solid #D6D7DA"
+										},
+										"showValColor": "#272727"
+									},
+									"columnName": "pid"
+								},
+								"columnProps": {
+									"dataIndex": "pid",
+									"width": "150px",
+									"align": "left",
+									"editable": false,
+									"fieldShowType": "realVal",
+									"show": true
+								},
+								"columnName": "pid",
+								"_type": "string"
+							},
+							{
+								"widgetEntity": {
+									"label": "文本框",
+									"icon": "MdTitle",
+									"widgetRef": "FormInput",
+									"group": "formInput",
+									"eventAttr": [
+										{
+											"alias": "值改变事件",
+											"type": "onChange"
+										},
+										{
+											"alias": "单击事件",
+											"type": "onClick"
+										},
+										{
+											"alias": "获取焦点事件",
+											"type": "onFocus"
+										},
+										{
+											"alias": "失去焦点事件",
+											"type": "onBlur"
+										}
+									],
+									"varAttr": [
+										{
+											"alias": "实际值",
+											"attr": "realVal",
+											"type": "string",
+											"editable": true
+										},
+										{
+											"alias": "显示值",
+											"attr": "showVal",
+											"type": "string",
+											"editable": true
+										}
+									],
+									"id": "maedtdgW",
+									"_state": "active",
+									"propState": {
+										"title": "主键",
+										"show": {
+											"type": "visible"
+										},
+										"requiredProps": {
+											"type": false
+										},
+										"style": {
+											"backgroundColor": "transparent",
+											"border": "1px solid #D6D7DA"
+										},
+										"showValColor": "#272727"
+									},
+									"columnName": "id"
+								},
+								"columnProps": {
+									"dataIndex": "id",
+									"width": "150px",
+									"align": "left",
+									"editable": false,
+									"fieldShowType": "realVal",
+									"show": true
+								},
+								"columnName": "id",
+								"_type": "string"
+							}
+						],
+						"sortInfo": [],
+						"tagKey": "",
+						"ds": "1406940000611872768_list_1624275617925",
+						"rowKey": "id",
+						"tableSortFieldList": [
+							"create_user_id",
+							"last_update_time",
+							"path",
+							"sequence",
+							"create_time",
+							"create_user_name",
+							"level",
+							"name",
+							"pid",
+							"last_update_user_id",
+							"id",
+							"last_update_user_name"
+						],
+						"rangeConditions": {
+							"conditions": [
+								{
+									"varAlias": "$1$",
+									"field": "name",
+									"title": "名称",
+									"value": [
+										{
+											"exp": "",
+											"realVal": "",
+											"variable": "realVal_mrioeriW",
+											"variableConfig": {
+												"code": "FormInput$2.realVal",
+												"varType": "string",
+												"type": "widget",
+												"title": "实际值",
+												"wholeTitle": "输入_实际值",
+												"id": "realVal_mrioeriW",
+												"key": "realVal_mrioeriW",
+												"pid": "mrioeriW",
+												"editable": true,
+												"label": "实际值",
+												"value": "realVal_mrioeriW"
+											}
+										}
+									],
+									"method": "like"
+								}
+							],
+							"formula": "$1$",
+							"nextVarAlias": 2
+						}
+					}
+				}
+			]
+		}
+	],
+	"id": "1408620091297378304",
+	"name": "表格自测",
+	"pageState": {
+		"eventRef": {}
+	},
+	"pageID": "1408620091297378304",
+	"meta": {
+		"exp": {
+			"exp_tmafWoeW": {
+				"code": "var_pageInput_0_mode==='detail'",
+				"relation": [
+					{
+						"id": "var_pageInput_0_mode",
+						"varType": "string",
+						"type": "pageInput"
+					}
+				],
+				"methods": [],
+				"updateStatePath": "readOnly_mrioeriW",
+				"triggerType": "relationChange",
+				"defaultValue": true
+			},
+			"exp_appoilWo": {
+				"code": "var_pageInput_0_mode==='detail'",
+				"relation": [
+					{
+						"id": "var_pageInput_0_mode",
+						"varType": "string",
+						"type": "pageInput"
+					}
+				],
+				"methods": [],
+				"updateStatePath": "readOnly_mrioeriW",
+				"triggerType": "relationChange",
+				"defaultValue": true
+			}
+		},
+		"apiMeta": {
+			"1406940000611872768_list_1624275617925": {
+				"name": "查询[树形数据演示5]列表信息",
+				"resourcePath": "1406940000611872768_list_1624275617925",
+				"resourceType": "json",
+				"desc": "查询[树形数据演示5]列表信息",
+				"reqSchema": {
+					"__root": {
+						"$schema": "http://json-schema.org/draft-06/schema#",
+						"type": "object",
+						"_type": "object",
+						"__key": "__root",
+						"__parent": ""
+					},
+					"__root._page": {
+						"_errorValidMsgRule": [
+							"对象"
+						],
+						"type": "object",
+						"title": "分页参数",
+						"_type": "object",
+						"__key": "_page",
+						"__parent": "__root"
+					},
+					"__root._page.size": {
+						"_errorValidMsgRule": [
+							"整型"
+						],
+						"type": "integer",
+						"title": "请求数量",
+						"_type": "number",
+						"__parent": "__root._page",
+						"__key": "size"
+					},
+					"__root._page.from": {
+						"_errorValidMsgRule": [
+							"整型"
+						],
+						"type": "integer",
+						"title": "起始位移",
+						"_type": "number",
+						"__parent": "__root._page",
+						"__key": "from"
+					},
+					"__root._needTotal": {
+						"_errorValidMsgRule": [
+							"布尔值"
+						],
+						"_type": "boolean",
+						"type": "boolean",
+						"title": "是否返回总数",
+						"__key": "_needTotal",
+						"__parent": "__root"
+					},
+					"__root._searchCondRel": {
+						"_errorValidMsgRule": [
+							"字符串",
+							"取值范围:and,or"
+						],
+						"type": "string",
+						"enum": [
+							"and",
+							"or"
+						],
+						"_type": "string",
+						"title": "全文检索关联关系",
+						"__key": "_searchCondRel",
+						"__parent": "__root"
+					},
+					"__root._condRel": {
+						"_errorValidMsgRule": [
+							"字符串"
+						],
+						"type": "string",
+						"_type": "string",
+						"title": "条件关联关系",
+						"__key": "_condRel",
+						"__parent": "__root"
+					},
+					"__root._cond": {
+						"type": "object",
+						"title": "条件参数",
+						"__key": "_cond",
+						"_type": "objectArray",
+						"__parent": "__root"
+					},
+					"__root._cond.field": {
+						"_enumValueDescription": {
+							"create_user_id": {
+								"_dateEngineFieldType": "INT",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING_NUMBER",
+								"description": "创建人主键"
+							},
+							"last_update_time": {
+								"_dateEngineFieldType": "DATE_TIME",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "DATETIME",
+								"description": "最后修改时间"
+							},
+							"path": {
+								"_dateEngineFieldType": "STRING",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING",
+								"description": "路径"
+							},
+							"sequence": {
+								"_dateEngineFieldType": "INT",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING_NUMBER",
+								"description": "排序序号"
+							},
+							"create_time": {
+								"_dateEngineFieldType": "DATE_TIME",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "DATETIME",
+								"description": "创建时间"
+							},
+							"create_user_name": {
+								"_dateEngineFieldType": "STRING",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING",
+								"description": "创建人名称"
+							},
+							"level": {
+								"_dateEngineFieldType": "INT",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING_NUMBER",
+								"description": "层级"
+							},
+							"name": {
+								"_dateEngineFieldType": "STRING",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING",
+								"description": "名称"
+							},
+							"pid": {
+								"_dateEngineFieldType": "INT",
+								"_dateEngineFieldDataType": "FK",
+								"_type": "STRING_NUMBER",
+								"description": "父节点"
+							},
+							"last_update_user_id": {
+								"_dateEngineFieldType": "INT",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING_NUMBER",
+								"description": "最后修改人主键"
+							},
+							"id": {
+								"_dateEngineFieldType": "INT",
+								"_dateEngineFieldDataType": "PK",
+								"_type": "STRING_NUMBER",
+								"description": "主键"
+							},
+							"last_update_user_name": {
+								"_dateEngineFieldType": "STRING",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING",
+								"description": "最后修改人名称"
+							}
+						},
+						"_errorValidMsgRule": [
+							"字符串",
+							"取值范围:create_user_id,last_update_time,path,sequence,create_time,create_user_name,level,name,pid,last_update_user_id,id,last_update_user_name"
+						],
+						"type": "string",
+						"enum": [
+							"create_user_id",
+							"last_update_time",
+							"path",
+							"sequence",
+							"create_time",
+							"create_user_name",
+							"level",
+							"name",
+							"pid",
+							"last_update_user_id",
+							"id",
+							"last_update_user_name"
+						],
+						"_type": "string",
+						"title": "条件字段",
+						"__key": "field",
+						"__parent": "__root._cond"
+					},
+					"__root._cond.method": {
+						"_enumValueDescription": {
+							"greaterEqu": {
+								"paramAmount": 1,
+								"name": "greaterEqu",
+								"description": "大于等于"
+							},
+							"in": {
+								"paramAmount": 1,
+								"name": "in",
+								"description": "在范围内"
+							},
+							"like": {
+								"paramAmount": 1,
+								"name": "like",
+								"description": "包含"
+							},
+							"notBetween": {
+								"paramAmount": 2,
+								"name": "notBetween",
+								"description": "不介于"
+							},
+							"equ": {
+								"paramAmount": 1,
+								"name": "equ",
+								"description": "等于"
+							},
+							"startNotWith": {
+								"paramAmount": 1,
+								"name": "startNotWith",
+								"description": "不开始以"
+							},
+							"less": {
+								"paramAmount": 1,
+								"name": "less",
+								"description": "小于"
+							},
+							"endNotWith": {
+								"paramAmount": 1,
+								"name": "endNotWith",
+								"description": "不结尾以"
+							},
+							"empty": {
+								"paramAmount": 0,
+								"name": "empty",
+								"description": "为空"
+							},
+							"notEqu": {
+								"paramAmount": 1,
+								"name": "notEqu",
+								"description": "不等于"
+							},
+							"lessEqu": {
+								"paramAmount": 1,
+								"name": "lessEqu",
+								"description": "小于等于"
+							},
+							"notLike": {
+								"paramAmount": 1,
+								"name": "notLike",
+								"description": "不包含"
+							},
+							"endWith": {
+								"paramAmount": 1,
+								"name": "endWith",
+								"description": "结尾以"
+							},
+							"notIn": {
+								"paramAmount": 1,
+								"name": "notIn",
+								"description": "不在范围内"
+							},
+							"notEmpty": {
+								"paramAmount": 0,
+								"name": "notEmpty",
+								"description": "不为空"
+							},
+							"greater": {
+								"paramAmount": 1,
+								"name": "greater",
+								"description": "大于"
+							},
+							"between": {
+								"paramAmount": 2,
+								"name": "between",
+								"description": "介于"
+							},
+							"startWith": {
+								"paramAmount": 1,
+								"name": "startWith",
+								"description": "开始以"
+							}
+						},
+						"_errorValidMsgRule": [
+							"字符串",
+							"取值范围:greaterEqu,in,like,notBetween,equ,startNotWith,less,endNotWith,empty,notEqu,lessEqu,notLike,endWith,notIn,notEmpty,greater,between,startWith"
+						],
+						"type": "string",
+						"enum": [
+							"greaterEqu",
+							"in",
+							"like",
+							"notBetween",
+							"equ",
+							"startNotWith",
+							"less",
+							"endNotWith",
+							"empty",
+							"notEqu",
+							"lessEqu",
+							"notLike",
+							"endWith",
+							"notIn",
+							"notEmpty",
+							"greater",
+							"between",
+							"startWith"
+						],
+						"_type": "string",
+						"title": "条件操作符",
+						"__key": "method",
+						"__parent": "__root._cond"
+					},
+					"__root._cond.value": {
+						"type": "array",
+						"items": {
+							"_type": "STRING",
+							"type": "string",
+							"title": "条件值"
+						},
+						"_type": "stringArray",
+						"title": "条件值",
+						"__key": "value",
+						"__parent": "__root._cond"
+					},
+					"__root._sort": {
+						"type": "object",
+						"title": "排序参数",
+						"__key": "_sort",
+						"_type": "objectArray",
+						"__parent": "__root"
+					},
+					"__root._sort.field": {
+						"_enumValueDescription": {
+							"create_user_id": {
+								"_dateEngineFieldType": "INT",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING_NUMBER",
+								"description": "创建人主键"
+							},
+							"last_update_time": {
+								"_dateEngineFieldType": "DATE_TIME",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "DATETIME",
+								"description": "最后修改时间"
+							},
+							"path": {
+								"_dateEngineFieldType": "STRING",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING",
+								"description": "路径"
+							},
+							"sequence": {
+								"_dateEngineFieldType": "INT",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING_NUMBER",
+								"description": "排序序号"
+							},
+							"create_time": {
+								"_dateEngineFieldType": "DATE_TIME",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "DATETIME",
+								"description": "创建时间"
+							},
+							"create_user_name": {
+								"_dateEngineFieldType": "STRING",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING",
+								"description": "创建人名称"
+							},
+							"level": {
+								"_dateEngineFieldType": "INT",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING_NUMBER",
+								"description": "层级"
+							},
+							"name": {
+								"_dateEngineFieldType": "STRING",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING",
+								"description": "名称"
+							},
+							"pid": {
+								"_dateEngineFieldType": "INT",
+								"_dateEngineFieldDataType": "FK",
+								"_type": "STRING_NUMBER",
+								"description": "父节点"
+							},
+							"last_update_user_id": {
+								"_dateEngineFieldType": "INT",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING_NUMBER",
+								"description": "最后修改人主键"
+							},
+							"id": {
+								"_dateEngineFieldType": "INT",
+								"_dateEngineFieldDataType": "PK",
+								"_type": "STRING_NUMBER",
+								"description": "主键"
+							},
+							"last_update_user_name": {
+								"_dateEngineFieldType": "STRING",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING",
+								"description": "最后修改人名称"
+							}
+						},
+						"_errorValidMsgRule": [
+							"字符串",
+							"取值范围:create_user_id,last_update_time,path,sequence,create_time,create_user_name,level,name,pid,last_update_user_id,id,last_update_user_name"
+						],
+						"type": "string",
+						"enum": [
+							"create_user_id",
+							"last_update_time",
+							"path",
+							"sequence",
+							"create_time",
+							"create_user_name",
+							"level",
+							"name",
+							"pid",
+							"last_update_user_id",
+							"id",
+							"last_update_user_name"
+						],
+						"_type": "string",
+						"title": "排序字段",
+						"__key": "field",
+						"__parent": "__root._sort"
+					},
+					"__root._sort.order": {
+						"_errorValidMsgRule": [
+							"字符串",
+							"取值范围:asc,desc"
+						],
+						"type": "string",
+						"enum": [
+							"asc",
+							"desc"
+						],
+						"_type": "string",
+						"title": "排序类型",
+						"__key": "order",
+						"__parent": "__root._sort"
+					},
+					"__root._search": {
+						"_errorValidMsgRule": [
+							"对象"
+						],
+						"type": "object",
+						"title": "全文检索参数",
+						"_type": "object",
+						"__key": "_search",
+						"__parent": "__root"
+					},
+					"__root._search.fields": {
+						"type": "object",
+						"title": "全文检索字段列表",
+						"__key": "fields",
+						"_type": "objectArray",
+						"__parent": "__root._search"
+					},
+					"__root._search.fields.field": {
+						"_enumValueDescription": {
+							"create_user_id": {
+								"_dateEngineFieldType": "INT",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING_NUMBER",
+								"description": "创建人主键"
+							},
+							"last_update_time": {
+								"_dateEngineFieldType": "DATE_TIME",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "DATETIME",
+								"description": "最后修改时间"
+							},
+							"path": {
+								"_dateEngineFieldType": "STRING",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING",
+								"description": "路径"
+							},
+							"sequence": {
+								"_dateEngineFieldType": "INT",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING_NUMBER",
+								"description": "排序序号"
+							},
+							"create_time": {
+								"_dateEngineFieldType": "DATE_TIME",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "DATETIME",
+								"description": "创建时间"
+							},
+							"create_user_name": {
+								"_dateEngineFieldType": "STRING",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING",
+								"description": "创建人名称"
+							},
+							"level": {
+								"_dateEngineFieldType": "INT",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING_NUMBER",
+								"description": "层级"
+							},
+							"name": {
+								"_dateEngineFieldType": "STRING",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING",
+								"description": "名称"
+							},
+							"pid": {
+								"_dateEngineFieldType": "INT",
+								"_dateEngineFieldDataType": "FK",
+								"_type": "STRING_NUMBER",
+								"description": "父节点"
+							},
+							"last_update_user_id": {
+								"_dateEngineFieldType": "INT",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING_NUMBER",
+								"description": "最后修改人主键"
+							},
+							"id": {
+								"_dateEngineFieldType": "INT",
+								"_dateEngineFieldDataType": "PK",
+								"_type": "STRING_NUMBER",
+								"description": "主键"
+							},
+							"last_update_user_name": {
+								"_dateEngineFieldType": "STRING",
+								"_dateEngineFieldDataType": "NORMAL",
+								"_type": "STRING",
+								"description": "最后修改人名称"
+							}
+						},
+						"_errorValidMsgRule": [
+							"字符串",
+							"取值范围:create_user_id,last_update_time,path,sequence,create_time,create_user_name,level,name,pid,last_update_user_id,id,last_update_user_name"
+						],
+						"type": "string",
+						"enum": [
+							"create_user_id",
+							"last_update_time",
+							"path",
+							"sequence",
+							"create_time",
+							"create_user_name",
+							"level",
+							"name",
+							"pid",
+							"last_update_user_id",
+							"id",
+							"last_update_user_name"
+						],
+						"_type": "string",
+						"title": "全文检索字段",
+						"__key": "field",
+						"__parent": "__root._search.fields"
+					},
+					"__root._search.value": {
+						"_errorValidMsgRule": [
+							"字符串"
+						],
+						"type": "string",
+						"_type": "string",
+						"title": "全文检索值",
+						"__key": "value",
+						"__parent": "__root._search"
+					}
+				},
+				"resSchema": {
+					"__root": {
+						"$schema": "http://json-schema.org/draft-06/schema#",
+						"type": "object",
+						"_type": "object",
+						"__key": "__root",
+						"__parent": ""
+					},
+					"__root.msg": {
+						"_errorValidMsgRule": [
+							"字符串"
+						],
+						"type": "string",
+						"_type": "string",
+						"title": "提示消息",
+						"__key": "msg",
+						"__parent": "__root"
+					},
+					"__root.result": {
+						"_errorValidMsgRule": [
+							"对象"
+						],
+						"type": "object",
+						"title": "返回结果",
+						"_type": "object",
+						"__key": "result",
+						"__parent": "__root"
+					},
+					"__root.result.data": {
+						"type": "object",
+						"title": "返回数据集合",
+						"__key": "data",
+						"_type": "objectArray",
+						"__parent": "__root.result"
+					},
+					"__root.result.data.create_user_id": {
+						"_errorValidMsgRule": [
+							"字符串"
+						],
+						"type": "string",
+						"_remoteType": "string_number",
+						"_type": "string",
+						"title": "创建人主键",
+						"__key": "create_user_id",
+						"__parent": "__root.result.data"
+					},
+					"__root.result.data.last_update_time": {
+						"_errorValidMsgRule": [
+							"字符串"
+						],
+						"_type": "datetime",
+						"type": "string",
+						"title": "最后修改时间",
+						"__key": "last_update_time",
+						"__parent": "__root.result.data"
+					},
+					"__root.result.data.path": {
+						"_errorValidMsgRule": [
+							"字符串"
+						],
+						"type": "string",
+						"_type": "string",
+						"title": "路径",
+						"__key": "path",
+						"__parent": "__root.result.data"
+					},
+					"__root.result.data.sequence": {
+						"_errorValidMsgRule": [
+							"字符串"
+						],
+						"type": "string",
+						"_remoteType": "string_number",
+						"_type": "string",
+						"title": "排序序号",
+						"__key": "sequence",
+						"__parent": "__root.result.data"
+					},
+					"__root.result.data.create_time": {
+						"_errorValidMsgRule": [
+							"字符串"
+						],
+						"_type": "datetime",
+						"type": "string",
+						"title": "创建时间",
+						"__key": "create_time",
+						"__parent": "__root.result.data"
+					},
+					"__root.result.data.create_user_name": {
+						"_errorValidMsgRule": [
+							"字符串"
+						],
+						"type": "string",
+						"_type": "string",
+						"title": "创建人名称",
+						"__key": "create_user_name",
+						"__parent": "__root.result.data"
+					},
+					"__root.result.data.level": {
+						"_errorValidMsgRule": [
+							"字符串"
+						],
+						"type": "string",
+						"_remoteType": "string_number",
+						"_type": "string",
+						"title": "层级",
+						"__key": "level",
+						"__parent": "__root.result.data"
+					},
+					"__root.result.data.name": {
+						"_errorValidMsgRule": [
+							"字符串"
+						],
+						"type": "string",
+						"_type": "string",
+						"title": "名称",
+						"__key": "name",
+						"__parent": "__root.result.data"
+					},
+					"__root.result.data.pid": {
+						"_errorValidMsgRule": [
+							"字符串"
+						],
+						"type": "string",
+						"_remoteType": "string_number",
+						"_type": "string",
+						"title": "父节点",
+						"__key": "pid",
+						"__parent": "__root.result.data"
+					},
+					"__root.result.data.last_update_user_id": {
+						"_errorValidMsgRule": [
+							"字符串"
+						],
+						"type": "string",
+						"_remoteType": "string_number",
+						"_type": "string",
+						"title": "最后修改人主键",
+						"__key": "last_update_user_id",
+						"__parent": "__root.result.data"
+					},
+					"__root.result.data.id": {
+						"_errorValidMsgRule": [
+							"字符串"
+						],
+						"type": "string",
+						"_remoteType": "string_number",
+						"_type": "string",
+						"title": "主键",
+						"__key": "id",
+						"__parent": "__root.result.data"
+					},
+					"__root.result.data.last_update_user_name": {
+						"_errorValidMsgRule": [
+							"字符串"
+						],
+						"type": "string",
+						"_type": "string",
+						"title": "最后修改人名称",
+						"__key": "last_update_user_name",
+						"__parent": "__root.result.data"
+					},
+					"__root.result.totalCount": {
+						"_errorValidMsgRule": [
+							"整型"
+						],
+						"type": "integer",
+						"title": "总记录数",
+						"_type": "number",
+						"__parent": "__root.result",
+						"__key": "totalCount"
+					},
+					"__root.code": {
+						"_errorValidMsgRule": [
+							"字符串"
+						],
+						"type": "string",
+						"_type": "string",
+						"title": "返回码",
+						"__key": "code",
+						"__parent": "__root"
+					},
+					"__root.timestamp": {
+						"_errorValidMsgRule": [
+							"字符串"
+						],
+						"type": "string",
+						"_type": "string",
+						"title": "时间戳",
+						"__key": "timestamp",
+						"__parent": "__root"
+					}
+				},
+				"requestAgreement": "POST",
+				"id": "1406940000611872768_list_1624275617925",
+				"refs": {
+					"widget": [
+						"papmleaa"
+					]
+				}
+			}
+		},
+		"apisConfig": {},
+		"events": {
+			"event_PC_onPageLoad_zZtHpEQD": {
+				"conditions": {
+					"dataSource": [
+						{
+							"id": "iiCttosi",
+							"key": "iiCttosi",
+							"index": 1,
+							"var": {
+								"type": "pageInput",
+								"value": "var_pageInput_0_mode"
+							},
+							"condition": "cond2",
+							"value": {
+								"exp": "",
+								"realVal": "insert",
+								"variable": ""
+							}
+						}
+					],
+					"formulaStr": "$1$",
+					"formula": {
+						"var": "$1$"
+					}
+				},
+				"actList": [
+					"pageDataLoad"
+				]
+			}
+		},
+		"widgetCounter": 3,
+		"dataSource": {},
+		"pageInterface": {},
+		"linkage": {},
+		"schema": {},
+		"actions": {
+			"closePage": {
+				"actionConfig": {
+					"config": {},
+					"type": "closePage",
+					"label": "关闭页面"
+				},
+				"actionName": "关闭页面",
+				"id": "closePage",
+				"preCheck": "",
+				"triggerCondition": "",
+				"readonly": true
+			},
+			"pageDataReload": {
+				"actionConfig": {
+					"config": {},
+					"type": "pageDataReload",
+					"label": "页面数据重载"
+				},
+				"actionName": "页面数据重载",
+				"id": "pageDataReload",
+				"preCheck": "",
+				"triggerCondition": "",
+				"readonly": true,
+				"reloadable": false
+			},
+			"pageDataLoad": {
+				"actionConfig": {
+					"config": {},
+					"type": "pageDataLoad",
+					"label": "页面数据加载"
+				},
+				"actionName": "页面数据加载",
+				"id": "pageDataLoad",
+				"preCheck": "",
+				"triggerCondition": "",
+				"readonly": true
+			}
+		},
+		"defaultWidgetsState": {},
+		"widgetsValid": {
+			"selectedRows_papmleaa": [
+				{
+					"check": "(handlerCtx, effectState)=>{const value=handlerCtx.getState(effectState); if(value?.length===1)return;return '请选择一行表格数据'}",
+					"attr": "selectedRows",
+					"widgetID": "papmleaa",
+					"effectState": "selectedRows_papmleaa",
+					"getEffective": "()=>true"
+				}
+			],
+			"selectedRowKeys_papmleaa": [
+				{
+					"check": "(handlerCtx, effectState)=>{const value=handlerCtx.getState(effectState); if(value?.length===1)return;return '请选择一行表格数据'}",
+					"attr": "selectedRowKeys",
+					"widgetID": "papmleaa",
+					"effectState": "selectedRowKeys_papmleaa",
+					"getEffective": "()=>true"
+				}
+			]
+		},
+		"varRely": {
+			"var_pageInput_0_mode": {
+				"title": "页面模式",
+				"type": "pageInput",
+				"varType": "string",
+				"realVal": "insert",
+				"code": "var.page.mode"
+			},
+			"var_pageInput_1_id": {
+				"title": "主键id",
+				"type": "pageInput",
+				"varType": "string",
+				"realVal": "",
+				"code": "var.page.id"
+			},
+			"var_papmleaa": {
+				"type": "widget",
+				"widgetRef": "papmleaa",
+				"varAttr": [
+					{
+						"alias": "当前页数",
+						"attr": "current",
+						"type": "number",
+						"editable": false
+					},
+					{
+						"alias": "每页显示行数",
+						"attr": "pageSize",
+						"type": "number",
+						"editable": false
+					},
+					{
+						"alias": "数据总数",
+						"attr": "total",
+						"type": "number",
+						"editable": false
+					},
+					{
+						"alias": "选中行数据列表",
+						"attr": "selectedRows",
+						"rules": [
+							{
+								"check": "(handlerCtx, effectState)=>{const value=handlerCtx.getState(effectState); if(value?.length===1)return;return '请选择一行表格数据'}"
+							}
+						],
+						"type": "array",
+						"method": "selectedRows",
+						"editable": true
+					},
+					{
+						"alias": "选中行唯一标识列表",
+						"attr": "selectedRowKeys",
+						"rules": [
+							{
+								"check": "(handlerCtx, effectState)=>{const value=handlerCtx.getState(effectState); if(value?.length===1)return;return '请选择一行表格数据'}"
+							}
+						],
+						"type": "array",
+						"editable": true
+					},
+					{
+						"alias": "最新选中行数据",
+						"attr": "lastSelectedRow",
+						"type": "object",
+						"method": "lastSelectedRow",
+						"editable": true
+					},
+					{
+						"alias": "默认分页数据",
+						"attr": "pagination",
+						"type": "object",
+						"editable": false
+					},
+					{
+						"alias": "当前操作是否为行操作",
+						"attr": "rowClicked",
+						"type": "boolean",
+						"editable": false,
+						"unReadable": true
+					},
+					{
+						"alias": "已排序字段列表",
+						"attr": "usedSortFields",
+						"type": "array",
+						"editable": false,
+						"unReadable": true
+					}
+				]
+			},
+			"var_mrioeriW": {
+				"type": "widget",
+				"widgetRef": "mrioeriW",
+				"varAttr": [
+					{
+						"alias": "实际值",
+						"attr": "realVal",
+						"type": "string",
+						"editable": true
+					},
+					{
+						"alias": "显示值",
+						"attr": "showVal",
+						"type": "string",
+						"editable": true
+					}
+				]
+			},
+			"var_eomfmmle": {
+				"type": "propLikeWidget",
+				"id": "eomfmmle",
+				"title": "名称",
+				"varCode": "FormInput$name",
+				"varAttr": [
+					{
+						"alias": "实际值",
+						"attr": "realVal",
+						"type": "string",
+						"editable": true
+					},
+					{
+						"alias": "显示值",
+						"attr": "showVal",
+						"type": "string",
+						"editable": true
+					}
+				]
+			},
+			"var_ldpgWiip": {
+				"type": "propLikeWidget",
+				"id": "ldpgWiip",
+				"title": "父节点",
+				"varCode": "FormInputNumber$pid",
+				"varAttr": [
+					{
+						"alias": "实际值",
+						"attr": "realVal",
+						"type": "number",
+						"editable": true
+					}
+				]
+			}
+		},
+		"_rely": {
+			"var_papmleaa": [
+				"papmleaa"
+			],
+			"var_lortrWgg": [
+				"lortrWgg",
+				"lortrWgg",
+				"lortrWgg",
+				"lortrWgg"
+			],
+			"var_mtiWdWlt": [
+				"mtiWdWlt",
+				"mtiWdWlt",
+				"mtiWdWlt"
+			],
+			"var_ttairiar": [
+				"ttairiar",
+				"ttairiar"
+			],
+			"var_igtoetio": [
+				"igtoetio"
+			],
+			"var_mrioeriW": [
+				"mrioeriW",
+				"mrioeriW"
+			],
+			"var_eomfmmle": [
+				"eomfmmle",
+				"eomfmmle"
+			],
+			"var_ldpgWiip": [
+				"ldpgWiip"
+			]
+		},
+		"errors": {},
+		"dsRely": {},
+		"varInfo": {}
+	}
+}

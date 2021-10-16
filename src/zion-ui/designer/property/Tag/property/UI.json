@@ -1,0 +1,138 @@
+{
+	"type": "[[Form]]",
+	"props": {
+		"controlKey": "{{controlKey}}",
+		"formConfig": {
+			"layout": "vertical",
+			"columns": 1,
+			"labelCol": {
+				"span": 24
+			}
+		},
+		"formItemConfig": [
+			{
+				"field": "controlKey",
+				"labelProps": {
+					"label": "控件编码"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"disabled": true
+					}
+				}
+			},
+			{
+				"field": "text",
+				"labelProps": {
+					"label": "标签文字"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"placeholder": "输入标签文字",
+						"onChange": "{{Service.text_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "className",
+				"labelProps": {
+					"label": "类名",
+					"help": "输入类名，多个用空格隔开"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"allowSpace": true,
+						"type": "input",
+						"placeholder": "输入类名",
+						"onChange": "{{Service.className_onChange}}"
+					}
+				}
+			},
+			{
+				"field": "style",
+				"labelProps": {
+					"label": "样式"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"onClick": "{{Service.style_onClick}}",
+						"disableOnChange": true,
+						"placeholder": "输入样式"
+					}
+				}
+			},
+			{
+				"field": "type",
+				"labelProps": {
+					"label": "标签类型"
+				},
+				"controlProps": {
+					"type": "[[Select]]",
+					"props": {
+						"value": "default",
+						"onChange": "{{Service.type_onChange}}",
+						"dataSource": [
+							{
+								"key": "default",
+								"label": "default"
+							},
+							{
+								"key": "success",
+								"label": "success"
+							},
+							{
+								"key": "warn",
+								"label": "warn"
+							},
+							{
+								"key": "warning",
+								"label": "warning"
+							},
+							{
+								"key": "processing",
+								"label": "processing"
+							},
+							{
+								"key": "error",
+								"label": "error"
+							},
+							{
+								"key": "waiting",
+								"label": "waiting"
+							}
+						]
+					}
+				}
+			},
+			{
+				"field": "icon",
+				"labelProps": {
+					"label": "小图标"
+				},
+				"controlProps": {
+					"type": "[[Input]]",
+					"props": {
+						"onClick": "{{Service.icon_onClick}}",
+						"placeholder": "选择小图标"
+					}
+				}
+			},
+			{
+				"field": "color",
+				"labelProps": {
+					"label": "颜色"
+				},
+				"controlProps": {
+					"type": "[[ColorPicker]]",
+					"props": {
+						"onChange": "{{Service.color_onChange}}"
+					}
+				}
+			}
+		]
+	}
+}
